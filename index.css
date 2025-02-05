@@ -17,6 +17,7 @@
     background-color: whitesmoke;
     padding: 10px 2%;
     border-radius: 30px;
+    z-index: 1000;
 }
 
 
@@ -116,7 +117,6 @@
     height: 300px;
     margin: 20px auto;
     overflow: hidden; 
-    z-index: 100;
 }
 
 #gallery img {
