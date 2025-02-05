@@ -116,6 +116,7 @@
     height: 300px;
     margin: 20px auto;
     overflow: hidden; 
+    z-index: 100;
 }
 
 #gallery img {
