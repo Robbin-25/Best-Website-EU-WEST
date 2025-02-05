@@ -15,16 +15,16 @@ function updateImage() {
     }, 0);
 }
 
-prevButton.addEventListener('click', () => {
+function prevSlide() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateImage();
-});
+}
 
-nextButton.addEventListener('click', () => {
+// Function to go to the next slide
+function nextSlide() {
     currentIndex = (currentIndex + 1) % images.length;
     updateImage();
-});
-
+}
 
 }
 
