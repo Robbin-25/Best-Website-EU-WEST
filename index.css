@@ -155,14 +155,7 @@ button:last-child {
 }
 
 
-#gallery:hover button {
-    opacity: 1;
-    transform: translateX(0);
-}
 
-button:hover {
-    background-color: transparent;
-}
 
 
 .slideshow-section {
