@@ -3,7 +3,7 @@ const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
 const img = document.getElementById('current-Image');
 
-const images = ['bl1.jpg', 'bl2.jpg', 'bl3.jpg', 'bl4.jpg'];
+const images = ['bl1.jpg', 'bl2.jpg', 'bl3.jpg', 'orchard.jpg', 'orchard1.jpg'];
 let currentIndex = 0; // Startindex
 
 function updateImage() {
@@ -15,21 +15,21 @@ function updateImage() {
     }, 0);
 }
 
-function prevSlide() {
+prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateImage();
-}
+});
 
-// Function to go to the next slide
-function nextSlide() {
+nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % images.length;
     updateImage();
+});
+
+function updateImage() {
+    img.classList.add('fade-out');
+    setTimeout(() => {
+        img.src = images[currentIndex];
+        img.alt = images[currentIndex];
+        img.classList.remove('fade-out');
+    }, 0);
 }
-
-}
-
-prevButton.addEventListener('click', prevSlide);
-nextButton.addEventListener('click', nextSlide);
-
-prevButton.addEventListener('touchstart', prevSlide);
-nextButton.addEventListener('touchstart', nextSlide);
