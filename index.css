@@ -217,6 +217,8 @@ button:hover {
 
 .footer-col {
     padding-left: 20vw;
+}
+.footer-text{
     font-size: 5vw;
 }
 }
@@ -229,8 +231,12 @@ button:hover {
 
 .footer-col {
     padding-left: 10vw;
+}
+
+.footer-text{
     font-size: 3vw;
 }
+
 }
 
 @media only screen and (min-width: 768px){
@@ -241,6 +247,9 @@ button:hover {
 
 .footer-col {
     padding-left: 5vw;
+}
+
+.footer-text{
     font-size: 1vw;
 }
 }
@@ -249,6 +258,8 @@ button:hover {
 
 .footer-col {
     padding-left: 5vw;
+}
+.footer-text{
     font-size: 0.8vw;
 }
 }
@@ -262,5 +273,5 @@ button:hover {
     border-radius: 50%;
     margin: 5px;
 }
-    
+
 
