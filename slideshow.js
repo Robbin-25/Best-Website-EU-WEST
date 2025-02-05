@@ -27,3 +27,9 @@ nextButton.addEventListener('click', () => {
 
 
 }
+
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
+
+prevButton.addEventListener('touchstart', prevSlide);
+nextButton.addEventListener('touchstart', nextSlide);
