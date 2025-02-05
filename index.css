@@ -207,6 +207,7 @@ button:hover {
     color: darkgrey;
 }
 
+
 /* RESPONSIVE GRID AND FONT*/
 
 @media only screen and (min-width: 320px){
@@ -273,5 +274,3 @@ button:hover {
     border-radius: 50%;
     margin: 5px;
 }
-
-
