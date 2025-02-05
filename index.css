@@ -134,6 +134,7 @@
     justify-content: space-between; 
     transform: translateY(-50%); 
     pointer-events: none; 
+    z-index: 100;
 }
 
 button {
@@ -148,6 +149,7 @@ button {
     opacity: 0; 
     transform: translateX(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease; /
+    z-index: 100;
 }
 
 button:last-child {
