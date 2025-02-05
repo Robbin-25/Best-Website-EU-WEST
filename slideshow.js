@@ -25,11 +25,5 @@ nextButton.addEventListener('click', () => {
     updateImage();
 });
 
-function updateImage() {
-    img.classList.add('fade-out');
-    setTimeout(() => {
-        img.src = images[currentIndex];
-        img.alt = images[currentIndex];
-        img.classList.remove('fade-out');
-    }, 0);
+
 }
