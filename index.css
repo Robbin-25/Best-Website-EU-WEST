@@ -114,7 +114,7 @@
 #gallery {
     position: relative;
     width: 80%; 
-    height: auto;
+    height: 40%;
     margin: 20px 10%;
     overflow: hidden; 
 }
