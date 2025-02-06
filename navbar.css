@@ -33,7 +33,7 @@
 .menu-icon {
     display: none;
     cursor: pointer;
-    gap: 5px;
+    gap: 0 5px;
     flex-direction: column;
 }
 
