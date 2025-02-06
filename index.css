@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 768px) {
     .navbar{
-        flex-direction: column;o
+        flex-direction: column;
     }
 
     .nav-2 {
@@ -107,7 +107,7 @@
 
 .text{
     height: 100vh;
-        margin: 1%;i
+        margin: 1%;
 } 
 
 /* Slideshow -------------------------------------------------------------------------------------------------------------------------  */
