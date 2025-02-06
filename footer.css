@@ -102,6 +102,31 @@
     margin: 5px;
 }
 
-.fa-facebook {
-  color: #1877F2;
+i.fa-brands.fa-youtube{
+
+    background-color: rgb(255, 255, 255);
+    color: #ff2323 !important;
+    
+}
+
+i.fa-brands.fa-facebook{
+
+    background-color: rgb(255, 255, 255);
+    color: #2361ff !important;
+    
+}
+
+
+i.fa-brands.fa-instagram{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(231, 131, 148) ;
+    
+}
+
+i.fa-brands.fa-google-plus{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 220, 78) ;
+    
 }
