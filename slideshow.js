@@ -3,7 +3,7 @@ const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
 const img = document.getElementById('current-Image');
 
-const images = ['bl1.jpg', 'bl2.jpg', 'bl3.jpg', 'orchard.jpg', 'orchard1.jpg'];
+const images = ['bl1.jpg', 'bl2.jpg', 'bl3.jpg','bl4.jpg'];
 let currentIndex = 0; // Startindex
 
 function updateImage() {
