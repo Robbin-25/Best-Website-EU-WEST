@@ -113,9 +113,9 @@
 /* Slideshow -------------------------------------------------------------------------------------------------------------------------  */
 #gallery {
     position: relative;
-    width: 80vw; 
+    width: 86vw; 
     height: 40vw;
-    margin: 15px 10vw;
+    margin: 15px 7vw;
     overflow: hidden; 
 }
 
