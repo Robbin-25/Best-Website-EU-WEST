@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
 #gallery {
     position: relative;
     width: 86vw; 
@@ -37,9 +43,9 @@ button {
     transform: translateX(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease; 
     z-index: 100;
-    margin: 0 10px;
+    margin: 0 0px;
     font-size: min(6vw, 40px); 
-    padding: 40px 40px;
+    padding: 40px 20px;
 }
 
 button:last-child {
@@ -50,7 +56,7 @@ button:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 100vh;
     background-color: beige;
 }
 
