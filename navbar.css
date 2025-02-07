@@ -20,9 +20,9 @@ body {
     z-index: 1000;
 }
 
-.logo{
+.navbar h1{
     z-index: 1000;
-    height: 50px;
+    font-size: 22px;
 }
 
 .nav-links {
