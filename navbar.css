@@ -12,14 +12,13 @@
     background-color: whitesmoke;
     border-radius: 30px;
     z-index: 1000;
-    height: 10vw;
 }
 
 
 /* NAV-1 */
 
 .nav-1{
-    margin: 0 20px;
+    margin: 20px;
     height: 2vw;
 }
 
@@ -63,7 +62,7 @@
 /* NAV-2 */
 
 .nav-2 {
-    margin: 0 20px;
+    margin: 20px;
     display: flex;
     list-style-type: none;
     height: 2vw;
