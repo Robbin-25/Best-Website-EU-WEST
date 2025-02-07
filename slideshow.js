@@ -45,3 +45,14 @@ function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
     document.querySelector(".hamburger").classList.toggle("active");
 }
+
+// Infintyscroll-----------------------------------------------------------------------------------------------------
+const track = document.querySelector(".slide-track");
+
+track.addEventListener("mouseenter", () => {
+    track.style.animationPlayState = "paused";
+});
+
+track.addEventListener("mouseleave", () => {
+    track.style.animationPlayState = "running";
+});
