@@ -39,8 +39,8 @@
 
 .menu-icon span {
     display: block;
-    width: 1vw; 
-    height: 0.1vw;
+    width: 40px; 
+    height: 3px;
     background-color: black;
     transition: all 0.3s ease;
 }
@@ -92,7 +92,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin:0 1%
+        margin: 0 1%
     }
 
     .menu-icon {
