@@ -19,10 +19,10 @@
 
 .nav-1{
     margin: 0 20px;
+    height: 2vw;
 }
 
 .logo {
-    font-size: 15px;
     background-color: aqua;
 }
 
@@ -39,7 +39,7 @@
 
 .menu-icon span {
     display: block;
-    width: 35px; 
+    width: 30px; 
     height: 3px;
     background-color: black;
     transition: all 0.3s ease;
@@ -65,12 +65,12 @@
     margin: 0 20px;
     display: flex;
     list-style-type: none;
+    height: 2vw;
 }
 
 .nav-2 a{
     text-decoration: none;
     color: black;
-    font-size: 1vw;
 }
 
 /* Handy */
