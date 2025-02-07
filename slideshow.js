@@ -33,7 +33,7 @@ function autoSliding() {
     autoSlideInterval = setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         updateImage();
-    }, 3000); // Alle 3 Sekunden wechseln
+    }, 10000); 
 }
 
 autoSliding();
