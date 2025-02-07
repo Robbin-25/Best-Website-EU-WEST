@@ -3,7 +3,9 @@ const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
 const img = document.getElementById('current-Image');
 
-const images = ['bl1.jpg', 'bl2.jpg', 'bl3.jpg','bl4.jpg'];
+const images = [ 'bl1.jpg','bl2.jpg','bl3.jpg','bl4.jpg'
+];
+
 let currentIndex = 0; // Startindex
 
 function updateImage() {
@@ -12,7 +14,7 @@ function updateImage() {
         img.src = images[currentIndex];
         img.alt = images[currentIndex];
         img.classList.remove('fade-out');
-    }, 0);
+    }, 300);
 }
 
 prevButton.addEventListener('click', () => {
@@ -25,11 +27,13 @@ nextButton.addEventListener('click', () => {
     updateImage();
 });
 
-function updateImage() {
-    img.classList.add('fade-out');
-    setTimeout(() => {
-        img.src = images[currentIndex];
-        img.alt = images[currentIndex];
-        img.classList.remove('fade-out');
-    }, 0);
+let autoSlideInterval; // Variable für Intervall
+
+function autoSliding() {
+    autoSlideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+    }, 3000); // Alle 3 Sekunden wechseln
 }
+
+autoSliding();
