@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: whitesmoke;
-    padding: 15px 20px;
+    padding: 20px;
     color: black;
     position: fixed;
     width: 98%;
@@ -28,6 +28,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    min-height: 27px;
 }
 .nav-links li {
     margin: 0 20px;
