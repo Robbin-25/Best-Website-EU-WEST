@@ -53,6 +53,7 @@ body {
     height: 3px;
     background: black;
     transition: 0.3s;
+    z-index: 1000;
 }
 @media (max-width: 768px) {
     .nav-links {
