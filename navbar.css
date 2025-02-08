@@ -28,8 +28,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    max-height: 27px;
-    justify-content: center;
+    max-height: 30px;
 }
 .nav-links li {
     margin-left: 20px;
@@ -60,7 +59,7 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 50px;
+        top: 33px;
         left: 0;
         background: whitesmoke;
         border-bottom-right-radius: 35px;
