@@ -28,7 +28,6 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    max-height: 27px;
 }
 .nav-links li {
     margin-left: 20px;
