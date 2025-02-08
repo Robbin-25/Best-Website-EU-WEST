@@ -10,19 +10,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    padding: 20px 20px;
-    color: white;
+    background: whitesmoke;
+    padding: 20px;
+    color: black;
     position: fixed;
     width: 98%;
     margin: 15px 1%;
-    border-radius: 40px;
+    border-radius: 35px;
     z-index: 1000;
 }
 
-.navbar h1{
+.logo{
     z-index: 1000;
-    font-size: 22px;
+    height: 27px;
 }
 
 .nav-links {
@@ -30,11 +30,11 @@ body {
     display: flex;
 }
 .nav-links li {
-    margin: 0 15px;
+    margin: 5px 20px;
 }
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 22px;
 }
 .hamburger {
@@ -42,14 +42,14 @@ body {
     flex-direction: column;
     cursor: pointer;
     width: 36px;
-    height: 25px;
+    height: 27px;
     justify-content: space-between;
     transition: 0.3s;
 }
 .bar {
     width: 36px;
     height: 3px;
-    background: white;
+    background: black;
     transition: 0.3s;
 }
 @media (max-width: 768px) {
@@ -58,12 +58,12 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 40px;
+        top: 38px;
         left: 0;
-        background: #333;
+        background: whitesmoke;
         border-bottom-right-radius: 40px;
         border-bottom-left-radius: 40px;
-        padding: 40px 5px;
+        padding: 40px 0;
     }
     .nav-links.active {
         display: flex;
@@ -75,15 +75,16 @@ body {
 
 /* Animation: Hamburger zu X */
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(12px) rotate(-135deg);
 }
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-12px) rotate(135deg);
 }
 
 section{
     height: 1000vh;
 }
+
