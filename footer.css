@@ -19,7 +19,7 @@
 
 .footer-text{
     color: darkgrey;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .line{
@@ -31,14 +31,14 @@
     color: darkgrey;
     margin: 1vw;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .social-icons a{
     display: block;
     color: darkgrey;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -64,14 +64,14 @@
 
 @media only screen and (min-width: 1600px){
 .footer-text{
-    font-size: 30px;
-    }
-
-.Rights-div{
     font-size: 27px;
     }
 
+.Rights-div{
+    font-size: 24px;
+    }
+
 .social-icons a{
-    font-size: 30px;
+    font-size: 27px;
     }
 }
