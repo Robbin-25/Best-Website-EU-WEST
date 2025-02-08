@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: whitesmoke;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: black;
     position: fixed;
     width: 98%;
@@ -30,7 +30,7 @@ body {
     display: flex;
 }
 .nav-links li {
-    margin: 5px 20px;
+    margin: 0 20px;
 }
 .nav-links a {
     text-decoration: none;
@@ -61,10 +61,14 @@ body {
         top: 38px;
         left: 0;
         background: whitesmoke;
-        border-bottom-right-radius: 40px;
-        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
         padding: 40px 0;
         z-index: 500;
+    }
+
+    .nav-links li {
+    margin: 5px 20px;
     }
     .nav-links.active {
         display: flex;
