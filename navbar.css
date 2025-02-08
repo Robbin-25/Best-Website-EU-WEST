@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: whitesmoke;
-    padding: 15px;
+    padding: 15px 20px;
     color: black;
     position: fixed;
     width: 98%;
@@ -30,6 +30,7 @@ body {
     list-style: none;
     display: flex;
 }
+
 .nav-links li {
     margin-left: 20px;
 }
