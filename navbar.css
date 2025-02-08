@@ -15,8 +15,8 @@ body {
     color: black;
     position: fixed;
     width: 98%;
-    margin: 15px 1%;
-    border-radius: 35px;
+    margin: 20px 1%;
+    border-radius: 40px;
     z-index: 1000;
 }
 
@@ -31,24 +31,24 @@ body {
     min-height: 27px;
 }
 .nav-links li {
-    margin: 0 20px;
+    margin-left: 20px;
 }
 .nav-links a {
     text-decoration: none;
     color: black;
-    height: 27px;
+    font-size: 27px;
 }
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    width: 36px;
+    width: 40px;
     height: 27px;
     justify-content: space-between;
     transition: 0.3s;
 }
 .bar {
-    width: 36px;
+    width: 40px;
     height: 3px;
     background: black;
     transition: 0.3s;
@@ -59,7 +59,7 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 38px;
+        top: 53px;
         left: 0;
         background: whitesmoke;
         border-bottom-right-radius: 35px;
