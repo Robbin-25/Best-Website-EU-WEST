@@ -26,13 +26,13 @@
 .slide-track {
     display: flex;
     gap: 20px; 
-    width: calc(320px * 10);
+    width: calc(420px * 10);
     animation: scroll 15s linear infinite;
 }
 
 .slide-track img {
     border-radius: 10px;
-    width: 300px; 
+    width: 400px; 
     height: auto;
     flex-shrink: 0;
 }
