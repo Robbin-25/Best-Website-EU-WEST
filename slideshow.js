@@ -39,10 +39,17 @@ function autoSliding() {
 autoSliding();
 b
 
-// Navbar-----------------------------------------------------------------------------------------------------
 
+// NAVBAR-----------------------------------------------------------------------------------------------------
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
     document.querySelector(".hamburger").classList.toggle("active");
 }
+
+
+// FOOTER-----------------------------------------------------------------------------------------------------
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
 
