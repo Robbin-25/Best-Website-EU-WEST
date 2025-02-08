@@ -29,6 +29,7 @@ body {
     list-style: none;
     display: flex;
     max-height: 27px;
+    justify-content: center;
 }
 .nav-links li {
     margin-left: 20px;
