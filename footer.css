@@ -82,3 +82,7 @@
     font-size: 27px;
     }
 }
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
