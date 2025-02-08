@@ -31,7 +31,10 @@
     color: darkgrey;
     margin: 1vw;
     text-align: center;
-    font-size: 14px;
+}
+
+.Right{
+    font-size: 14px
 }
 
 .social-icons a{
@@ -64,7 +67,7 @@
 
 @media only screen and (min-width: 1600px){
 .footer-text{
-    font-size: 47px;
+    font-size: 27px;
     }
 
 .Rights-div{
