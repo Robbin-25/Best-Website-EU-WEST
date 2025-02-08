@@ -7,7 +7,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Navbar------------------------------------------------------------------------------------------------------------------------*/
+
+/* NAVBAR------------------------------------------------------------------------------------------------------------------------*/
 
 .navbar {
     display: flex;
@@ -52,6 +53,7 @@ body {
     transition: 0.3s;
     z-index: 1000;
 }
+
 .bar {
     width: 40px;
     height: 3px;
@@ -59,6 +61,10 @@ body {
     transition: 0.3s;
     z-index: 1000;
 }
+
+
+/* HANDY------------------------------------------------------------------------------------------------------------------------ */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -86,7 +92,9 @@ body {
     }
 }
 
-/* Animation: Hamburger zu X */
+
+/* Animation: Hamburger------------------------------------------------------------------------------------------------------------------------ */
+
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(12px) rotate(-135deg);
 }
@@ -95,9 +103,5 @@ body {
 }
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(135deg);
-}
-
-section{
-    height: 200vh;
 }
 
