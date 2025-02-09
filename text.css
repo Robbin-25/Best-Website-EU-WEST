@@ -1,10 +1,18 @@
+.Text-section{
+  height: 200vh;
+  align-items: center;
+  background-color: beige;
+}
+
+
+/*Grid---------------------------------------------------------------------------------------------------------------------*/
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
 }
-
-    
+ 
 @media only screen and (min-width: 992px){   
 .grid-container{
     grid-template-columns: 1fr 1fr;
@@ -18,8 +26,7 @@
 }
 
 
-
-/*CLICKABLE-DIV*/
+/*DIV----------------------------------------------------------------------------------------------------------------------*/
 
 .item{
     display: flex;
