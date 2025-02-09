@@ -42,18 +42,18 @@
 /* Perfekter, endloser Loop */
 @keyframes scroll {
     from {
-        transform: translate3d(0);
+        transform: translateX(0);
     }
     to {
-        transform: translate3d(-50%);
+        transform: translateX(-50%);
     }
 }
 @-webkit-keyframes scroll {
     from {
-        -webkit-transform: translate3d(0);
+        -webkit-transform: translateX(0);
     }
     to {
-        -webkit-transform: translate3d(-50%);
+        -webkit-transform: translateX(-50%);
     }
 }
 
