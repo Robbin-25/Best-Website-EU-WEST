@@ -55,7 +55,7 @@ body {
 }
 
 .bar {
-    width: 40px;
+    width: 35px;
     height: 3px;
     background: black;
     transition: 0.3s;
