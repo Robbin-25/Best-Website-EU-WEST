@@ -4,7 +4,6 @@
     background-color: #3a5a40;
     bottom: 0;
     padding: 20px;
-    padding-left: 40px;
 }
 
 .container{
@@ -65,6 +64,10 @@
 
     .footer-col{
         text-align: center;
+    }
+
+    .footer-section{
+        padding-left: 40px;
     }
 
 }
