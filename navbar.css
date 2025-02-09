@@ -14,9 +14,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: whitesmoke;
+    background: #fefae0;
     padding: 15px 20px;
-    color: black;
+    color: #283618;
     position: fixed;
     width: 98%;
     margin: 20px 1%;
@@ -40,7 +40,7 @@ body {
 }
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: #283618;
     font-size: 28px;
 }
 .hamburger {
@@ -57,7 +57,7 @@ body {
 .bar {
     width: 35px;
     height: 3px;
-    background: black;
+    background: #283618;
     transition: 0.3s;
     z-index: 1000;
 }
@@ -73,7 +73,7 @@ body {
         position: absolute;
         top: 28px;
         left: 0;
-        background: whitesmoke;
+        background: #fefae0;
         border-bottom-right-radius: 35px;
         border-bottom-left-radius: 35px;
         padding: 40px 0;
