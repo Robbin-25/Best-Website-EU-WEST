@@ -52,6 +52,7 @@
   
   .Text-img{
     width: 100%;
+    height: 60%;
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
     border: 1px white;
