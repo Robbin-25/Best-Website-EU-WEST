@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.footer-col h2{
+    margin-bottom: 5px;
+}
+
 .footer-text{
     color: #dad7cd;
     font-size: 18px;
