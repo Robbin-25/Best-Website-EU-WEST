@@ -5,14 +5,14 @@
     font-size: xx-large;
 }
 
-body {
+.Infinity-section {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #111;
+    background-color: #a3b18a;
     overflow: hidden;
 }
 
@@ -26,12 +26,14 @@ body {
 .slide-track {
     display: flex;
     gap: 20px; 
-    width: calc(720px * 10);
+    width: calc(420px * 10);
     animation: scroll 15s linear infinite;
+    will-change: transform;
 }
 
 .slide-track img {
-    width: 700px; 
+    border-radius: 10px;
+    width: 400px; 
     height: auto;
     flex-shrink: 0;
 }
@@ -45,3 +47,4 @@ body {
         transform: translateX(-50%);
     }
 }  
+
