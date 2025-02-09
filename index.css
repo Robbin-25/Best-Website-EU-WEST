@@ -5,14 +5,14 @@
     font-size: xx-large;
 }
 
-.Infinity-section {
+body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #a3b18a;
+    background-color: #111;
     overflow: hidden;
 }
 
@@ -26,35 +26,22 @@
 .slide-track {
     display: flex;
     gap: 20px; 
-    width: calc(420px * 10);
+    width: calc(720px * 10);
     animation: scroll 15s linear infinite;
-    will-change: transform;
 }
 
 .slide-track img {
-    border-radius: 10px;
-    width: 400px; 
+    width: 700px; 
     height: auto;
     flex-shrink: 0;
 }
 
 
-/* Perfekter, endloser Loop */
 @keyframes scroll {
     from {
-        transform: translate3d(0, 0, 0);
+        transform: translateX(0);
     }
     to {
-        transform: translate3d(-50%, 0, 0);
+        transform: translateX(-50%);
     }
-}
-
-@-webkit-keyframes scroll {
-    from {
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-    to {
-        -webkit-transform: translate3d(-50%, 0, 0);
-    }
-}
-
+}  
