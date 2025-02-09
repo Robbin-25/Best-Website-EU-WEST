@@ -1,8 +1,5 @@
 .Text-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding-inline: 10vh;
   background-color: beige;
 }
 

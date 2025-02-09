@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -14,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fefae0;
+    background: whitesmoke;
     padding: 15px 20px;
     color: #283618;
     position: fixed;
@@ -103,9 +104,5 @@ body {
 }
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(135deg);
-}
-
-.text{
-    200vh
 }
 
