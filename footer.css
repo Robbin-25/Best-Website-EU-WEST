@@ -1,7 +1,7 @@
 /* FOOTER-SECTION------------------------------------------------------------------------------------------------------------------------*/
 
 .footer-section{
-    background-color: #3a5a40;
+    background-color: #bc6c25;
     bottom: 0;
     padding: 20px;
 }
@@ -13,13 +13,13 @@
 }
 
 .footer-col{
-    color: #ffffff;
+    color: #fefae0;
     margin: 2vw;
     text-align: center;
 }
 
 .footer-text{
-    color: darkgrey;
+    color: #dad7cd;
     font-size: 18px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .line{
-    background-color: #ffffff ;
+    background-color: #fefae0 ;
     height: 3px;
 }
 
@@ -38,19 +38,19 @@
 }
 
 .Rights{
-    color: darkgrey;
+    color: #dad7cd;
     font-size: 14px;
 }
 
 .social-icons a{
     display: block;
-    color: darkgrey;
+    color: #dad7cd;
     text-decoration: none;
     font-size: 18px;
 }
 
 .social-icons a:hover{
-    color: #ffffff;
+    color: #fefae0;
 }
 
 
