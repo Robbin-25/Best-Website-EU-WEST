@@ -34,5 +34,7 @@
 }
 
 .Image-grid-section{
-    hi
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: beige;
 }
