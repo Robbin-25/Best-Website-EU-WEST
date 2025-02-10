@@ -51,7 +51,7 @@
   }
   
   .Text-img{
-    width: 100%;
+    width: auto;
     height: 60%;
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
