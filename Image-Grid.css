@@ -1,8 +1,23 @@
-.item1 { grid-area: a; }
-.item2 { grid-area: b; }
-.item3 { grid-area: c; }
-.item4 { grid-area: d; }
-.item5 { grid-area: e; }
+.item1 { 
+    grid-area: a;
+    background-image: url(1.jpg); 
+}
+.item2 {    
+    grid-area: b;
+    background-image: url(bl1.jpg); 
+}
+.item3 {    
+    grid-area: c;
+    background-image: url(bl2.jpg); 
+}
+.item4 {    
+    grid-area: d;
+    background-image: url(bl3.jpg); 
+}
+.item5 {    
+    grid-area: e;
+    background-image: url(bl4.jpg); 
+}
 
 .image-grid-container {
     display: grid;
@@ -15,9 +30,8 @@
     padding: 10px;
 }
 
-.image-grid-container {
+.image-grid-container div{
     background-color: rgba(255, 255, 255, 0.8);
-    background-image: url(1.jpg);
     background-size: cover;
     background-position: center;
     height: 30vw;
