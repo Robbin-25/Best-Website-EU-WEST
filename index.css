@@ -28,7 +28,6 @@
     gap: 20px; 
     width: calc(420px * 10);
     animation: scroll 15s linear infinite;
-    -webkit-transform: translateZ(0);
 }
 
 .slide-track img {
@@ -36,6 +35,7 @@
     width: 400px; 
     height: auto;
     flex-shrink: 0;
+    -webkit-transform: translateZ(0);
 }
 
 
