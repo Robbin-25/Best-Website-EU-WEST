@@ -26,6 +26,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    background-color: beige;
 }
 
 .img-grid-container div img{
