@@ -56,7 +56,8 @@
     grid-template-areas:
     'a a a b b b'
     'c c d d e e';
-}   
+}  
+} 
 
 .Image-grid-section{
     background-color: beige;
