@@ -18,6 +18,8 @@
     z-index: 1000;
     width: 80%;
     margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .img-grid-container div {
@@ -57,7 +59,5 @@
 }   
 
 .Image-grid-section{
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  background-color: beige;
+    background-color: beige;
 }
