@@ -18,6 +18,7 @@
     z-index: 1000;
     width: 80%;
     margin: auto;
+    margin: 10vh;
 }
 
 .img-grid-container div {
@@ -46,7 +47,6 @@
     'a a a a a a'
     'b b c c c c'
     'd d d e e e';
-    margin: auto;
 }   
 }
 
@@ -55,7 +55,6 @@
     grid-template-areas:
     'a a a b b b'
     'c c d d e e';
-    margin: auto;
 }  
 } 
 
