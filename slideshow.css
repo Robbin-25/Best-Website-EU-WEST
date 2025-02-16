@@ -128,7 +128,7 @@
     background-color: #588157;
   }
   
-  #gallery:hover .prev-button .next-button{
+  #gallery:hover button {
     opacity: 1;
     transform: translateX(0);
   }
@@ -136,4 +136,3 @@
   .prev-button .next-button:hover {
     background-color: transparent;
   }
-
