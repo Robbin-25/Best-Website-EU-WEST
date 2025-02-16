@@ -100,7 +100,7 @@
     z-index: 100;
   }
   
-  button {
+  .prev-button .next-button{
     background-color: transparent;
     opacity: 0;
     color: white;
@@ -116,7 +116,7 @@
     padding: 40px 20px;
   }
   
-  button:last-child {
+  .prev-button .next-button:last-child {
     transform: translateX(20px); 
   }
   
@@ -128,12 +128,12 @@
     background-color: #588157;
   }
   
-  #gallery:hover button {
+  #gallery:hover .prev-button .next-button{
     opacity: 1;
     transform: translateX(0);
   }
   
-  button:hover {
+  .prev-button .next-button:hover {
     background-color: transparent;
   }
 
