@@ -16,7 +16,8 @@
     color: #a3b18a;
     margin: auto;
     align-items: center;
-    text-align: left;
+    text-align: center;
+    width: 230px;
 }
 
 .footer-col h2{
@@ -75,11 +76,6 @@
     .footer-col{
         text-align: left;
     }
-
-    .container{
-        padding: auto;
-    }
-
 }
 
 @media only screen and (min-width: 1080px){
@@ -92,6 +88,10 @@
 .footer-text{
     font-size: 27px;
     }
+
+.footer-col{
+        width: 345px;
+}
 
     .footer-text span{
     font-size: 27px;
