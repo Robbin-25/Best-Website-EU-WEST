@@ -56,7 +56,29 @@ function toggleMenu() {
     document.getElementById('year').textContent = new Date().getFullYear();
 
 
-// Text-Slider-----------------------------------------------------------------------------------------------------
+// Pop up chat-----------------------------------------------------------------------------------------------------
 
+const PopupToggler = document.querySelector("#Popup-toggler");
+const CloseButton = document.querySelector("#Close_Button");
+const Popup = document.querySelector(".Haupt-popup");
+
+// Öffnen des Popups
+PopupToggler.addEventListener("click", (event) => {
+    event.stopPropagation(); // Verhindert sofortiges Schließen nach dem Öffnen
+    document.body.classList.toggle("popup_open");
+});
+
+// Schließen des Popups mit dem Close-Button
+CloseButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    document.body.classList.remove("popup_open");
+});
+
+// Schließen des Popups, wenn außerhalb geklickt wird
+document.addEventListener("click", (event) => {
+    if (!Popup.contains(event.target) && !PopupToggler.contains(event.target)) {
+        document.body.classList.remove("popup_open");
+    }
+});
 
 
