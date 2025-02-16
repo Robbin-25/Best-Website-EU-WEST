@@ -3,7 +3,6 @@
 .footer-section{
     background-color: #606c38;
     bottom: 0;
-    padding: 20px;
 }
 
 .container{
@@ -15,7 +14,6 @@
 .footer-col{
     color: #a3b18a;
     margin: auto;
-    align-items: center;
     text-align: center;
     width: 230px;
 }
