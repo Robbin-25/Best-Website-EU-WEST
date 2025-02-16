@@ -9,14 +9,13 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    padding: auto;
+    padding: 2vw;
 }
 
 .footer-col{
     color: #a3b18a;
-    margin: auto;
+    margin: 2vw;
     text-align: center;
-    width: auto;
 }
 
 .footer-col h2{
