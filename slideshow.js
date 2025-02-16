@@ -3,10 +3,10 @@ const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
 const img = document.getElementById('current-Image');
 
-const images = [ 'bl1.jpg','bl2.jpg','bl3.jpg','bl4.jpg'
-];
+const images = ['bl1.jpg', 'bl2.jpg', 'bl3.jpg', 'bl4.jpg'];
 
 let currentIndex = 0; // Startindex
+let autoSlideInterval; // Variable für Intervall
 
 function updateImage() {
     img.classList.add('fade-out');
@@ -20,24 +20,29 @@ function updateImage() {
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateImage();
+    resetAutoSliding(); // Auto-Slide nach Klick zurücksetzen
 });
 
 nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % images.length;
     updateImage();
+    resetAutoSliding(); // Auto-Slide nach Klick zurücksetzen
 });
-
-let autoSlideInterval; // Variable für Intervall
 
 function autoSliding() {
     autoSlideInterval = setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         updateImage();
-    }, 10000); 
+    }, 10000); // Alle 10 Sekunden wechseln
 }
 
-autoSliding();
-b
+function resetAutoSliding() {
+    clearInterval(autoSlideInterval); // Stoppt das Auto-Sliding
+    autoSliding(); // Startet es neu
+}
+
+autoSliding(); // Startet das automatische Sliden
+
 
 
 // NAVBAR-----------------------------------------------------------------------------------------------------
