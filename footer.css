@@ -3,6 +3,7 @@
 .footer-section{
     background-color: #606c38;
     bottom: 0;
+    padding: 20px;
 }
 
 .container{
@@ -15,7 +16,8 @@
     color: #a3b18a;
     margin: auto;
     text-align: center;
-    width: 230px;
+    width: 220px;
+    align-items: flex-start;
 }
 
 .footer-col h2{
