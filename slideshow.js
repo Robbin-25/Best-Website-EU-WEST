@@ -52,44 +52,44 @@ function toggleMenu() {
 
 
 // Text-Slider-----------------------------------------------------------------------------------------------------
-    let index = 0;
-    const wrapper = document.querySelector('.slider-wrapper');
-    const items = document.querySelectorAll('.slider-item');
-    const total = items.length;
+        let index = 0;
+        const wrapper = document.querySelector('.slider-wrapper');
+        const items = document.querySelectorAll('.slider-item');
+        const total = items.length;
 
-    function updateSlider() {
-        items.forEach(item => item.classList.remove('active'));
-        items[index].classList.add('active');
-        wrapper.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    document.querySelector('.next').addEventListener('click', () => {
-        index = (index + 1) % total;
-        updateSlider();
-    });
-
-    document.querySelector('.prev').addEventListener('click', () => {
-        index = (index - 1 + total) % total;
-        updateSlider();
-    });
-
-    let startX = 0;
-    let endX = 0;
-    const slider = document.querySelector('.text-slider-container');
-
-    slider.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-    });
-
-    slider.addEventListener('touchend', (e) => {
-        endX = e.changedTouches[0].clientX;
-        if (startX > endX + 50) {
-            index = (index + 1) % total;
-        } else if (startX < endX - 50) {
-            index = (index - 1 + total) % total;
+        function updateSlider() {
+            items.forEach(item => item.classList.remove('active'));
+            items[index].classList.add('active');
+            wrapper.style.transform = `translateX(-${index * 100}%)`;
         }
-        updateSlider();
-    });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            index = (index + 1) % total;
+            updateSlider();
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            index = (index - 1 + total) % total;
+            updateSlider();
+        });
+
+        let startX = 0;
+        let endX = 0;
+        const slider = document.querySelector('.text-slider-container');
+
+        slider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) {
+                index = (index + 1) % total;
+            } else if (startX < endX - 50) {
+                index = (index - 1 + total) % total;
+            }
+            updateSlider();
+        });
 
 
 
