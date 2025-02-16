@@ -9,12 +9,12 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2vw;
+    padding: auto;
 }
 
 .footer-col{
     color: #a3b18a;
-    margin: 2vw;
+    margin: auto;
     align-items: center;
     text-align: left;
 }
