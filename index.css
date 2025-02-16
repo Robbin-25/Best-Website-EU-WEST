@@ -119,14 +119,14 @@
     background-color: transparent;
     color: white;
     border: 1px solid white;
-    font-size: clamp(1rem, 2.7vw, 1.6em);
-    width: clamp(130px, 11vw, 230px);
-    height: clamp(30px, 5vh, 80px);
+    width: clamp(80px, 8vw, 170px );
+    height: clamp(30px, 4vw, 60px);
     transition: background-color 2s ease-in-out;
     white-space: nowrap;
     cursor: pointer;
     margin-top: 80px;
 }
+
 
 .contact-btn:hover {
     background-color: rgba(255, 255, 255, 0.50);
