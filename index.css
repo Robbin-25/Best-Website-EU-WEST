@@ -132,6 +132,116 @@
     background-color: rgba(255, 255, 255, 0.50);
 }
 
+/* Popup-Button */
+#Popup-toggler {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: gray;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#Popup-toggler:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#Popup-toggler:active {
+    transform: scale(0.9);
+}
+
+/* Popup */
+.Haupt-popup {
+    position: fixed;
+    right: 35px;
+    bottom: 120px;
+    width: 420px;
+    height: 600px;
+    background: white;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+/* Popup sichtbar machen */
+body.popup_open .Haupt-popup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Header */
+.ContactPopup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Close-Button */
+#Close_Button {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Inhalt */
+.Popup-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.Popup-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Submit-Button */
+.Submit_button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Submit_button:hover {
+    background-color: rgb(1, 97, 1);
+}
+
+/* Icons umschalten */
+body.popup_open #Popup-toggler span:first-child {
+    display: none;
+}
+
+body.popup_open #Popup-toggler span:last-child {
+    display: inline;
+}
+
+/* Standardzustand */
+#Popup-toggler span:last-child {
+    display: none;
+}
 
 
 
