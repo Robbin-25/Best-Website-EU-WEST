@@ -15,7 +15,8 @@
 .footer-col{
     color: #a3b18a;
     margin: 2vw;
-    text-align: center;
+    align-items: center;
+    text-align: left;
 }
 
 .footer-col h2{
