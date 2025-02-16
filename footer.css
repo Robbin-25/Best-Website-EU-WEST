@@ -9,7 +9,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2vw;
+    padding: auto;
 }
 
 .footer-col{
