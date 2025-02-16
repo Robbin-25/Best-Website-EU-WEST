@@ -14,7 +14,7 @@ function updateImage() {
         img.src = images[currentIndex];
         img.alt = images[currentIndex];
         img.classList.remove('fade-out');
-    }, 300);
+    }, 100);
 }
 
 prevButton.addEventListener('click', () => {
