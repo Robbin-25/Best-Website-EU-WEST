@@ -82,3 +82,25 @@ document.addEventListener("click", (event) => {
 });
 
 
+window.onload = function() {
+    const title = document.querySelector('.title-h1');
+    const line = document.querySelector('.theline');
+    const text = document.querySelector('.under-under-text');
+
+    // Titel erscheinen lassen
+    title.style.opacity = "1";
+    title.style.transform = "scale(1)";
+
+    // Linie wächst (auf gleiche Breite wie Titel)
+    setTimeout(() => {
+        line.style.width = title.offsetWidth + "px";
+    }, 500); // 0.5 Sek Verzögerung nach Titel
+
+    // Untertext erscheint nach der Linie
+    setTimeout(() => {
+        text.style.opacity = "1";
+        text.style.transform = "scale(1)";
+    }, 1000); // 1 Sek Verzögerung nach Linie
+};
+
+
