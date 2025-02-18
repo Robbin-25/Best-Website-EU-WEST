@@ -380,6 +380,10 @@ body.popup_open #Popup-toggler span:last-child {
     line-height: 1.6;
 }
 
+.sec-blt { 
+    height: 100vh;
+}
+
  @media (max-width: 768px) {
             .container {
                 padding: 0; /* Remove container padding */
