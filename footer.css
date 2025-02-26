@@ -14,10 +14,9 @@
 
 .footer-col{
     color: #a3b18a;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     width: 220px;
-    align-items: flex-start;
 }
 
 .footer-col h2{
@@ -74,7 +73,7 @@
     }
 
     .footer-col{
-        text-align: left;
+    text-align: left;
     }
 }
 
