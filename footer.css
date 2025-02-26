@@ -17,6 +17,7 @@
     margin: auto;
     text-align: center;
     width: 220px;
+    align-items: flex-start;
 }
 
 .footer-col h2{
