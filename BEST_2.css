@@ -87,7 +87,7 @@
     background: whitesmoke;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
-    padding: 0;
+    padding: 5px 0;
     z-index: 500;
     gap: 5px;
     overflow: hidden;
