@@ -373,15 +373,16 @@
 
 .footer-col h2{
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .footer-text{
     color: #dad7cd;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer-text span{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer-line{
@@ -395,15 +396,11 @@
     color: #dad7cd; 
 }
 
-.footer-rights p{
-    font-size: 14px;
-}
-
 .footer-social a{
     display: block;
     color: #dad7cd;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer-social a:hover{
@@ -446,7 +443,7 @@
 }
 
 .footer-rights p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer-social a{
