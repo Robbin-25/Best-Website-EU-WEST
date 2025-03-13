@@ -390,10 +390,11 @@
     height: 3px;
 }
 
-.footer-rights{
+.footer-rights p{
     margin: 1vw;
     text-align: center;
     color: #dad7cd; 
+    font-size: 14px;
 }
 
 .footer-social a{
