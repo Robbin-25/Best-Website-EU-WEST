@@ -34,9 +34,36 @@ function toggleFAQ(element) {
     faqItem.classList.toggle("active");
 }
 
+// Timeline-----------------------------------------------------------------------------------------------------
 
-
-  function updateScroll() {
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.timeline-item');
+    const timelineProgress = document.querySelector('.timeline-progress');
+    const timeline = document.querySelector('.timeline');
+    
+    // Calculate positions after DOM is fully loaded
+    let itemPositions = [];
+    
+    function calculatePositions() {
+        itemPositions = [];
+        const timelineRect = timeline.getBoundingClientRect();
+        const timelineTop = window.pageYOffset + timelineRect.top;
+        
+        items.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            const itemTop = window.pageYOffset + rect.top;
+            
+            // Get the circle position (the ::after element)
+            const circleTop = itemTop - timelineTop; // This gets the top of the timeline item
+            
+            itemPositions.push({
+                top: circleTop,      // Position of the top of the circle
+                element: item
+            });
+        });
+    }
+    
+    function updateScroll() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const windowHeight = window.innerHeight;
         const documentHeight = Math.max(
@@ -120,3 +147,4 @@ function toggleFAQ(element) {
         window.dispatchEvent(new Event('scroll'));
     }, 100);
 });
+
