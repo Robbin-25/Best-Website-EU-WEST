@@ -32,3 +32,21 @@ window.addEventListener("scroll", function () {
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".hero").classList.add("visible");
 });
+
+// Chess -----------------------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".chess-content");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("chess-show");
+            } else {
+                entry.target.classList.remove("chess-show");
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    contents.forEach(content => {
+        observer.observe(content);
+    });
+});
