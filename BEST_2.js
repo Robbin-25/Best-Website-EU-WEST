@@ -33,6 +33,26 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".hero").classList.add("visible");
 });
 
+// Service -----------------------------------------------------------------------------------------------------
+const cards = document.querySelectorAll('.service-card');
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+cards.forEach(card => {
+    observer.observe(card);
+});
+
 // Chess -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const contents = document.querySelectorAll(".chess-content");
@@ -50,25 +70,20 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(content);
     });
 });
-// Service -----------------------------------------------------------------------------------------------------
 
-const cards = document.querySelectorAll('.service-card');
+// Porto -----------------------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const statsSection = document.querySelector(".porto-stats");
 
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        cards.forEach(card => {
-            observer.observe(card);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                statsSection.classList.add("porto-show-stats");
+            } else {
+                statsSection.classList.remove("porto-show-stats"); // Entfernt die Klasse, wenn sie nicht sichtbar ist
+            }
         });
+    }, { threshold: 0.3 });
+
+    observer.observe(statsSection);
+});
