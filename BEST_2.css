@@ -396,27 +396,14 @@
 }
 
  /* Service ------------------------------------------------------------------------------------------------------------------------*/
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
-}
-
 .scroll-space {
     height: 100vh;
 }
-
 .services-section {
     text-align: center;
     padding: 50px 30px;
     background-color: #f9f9f9;
 }
-
 .services-heading {
     margin: 0 0 50px 0;
     color: black;
@@ -425,7 +412,6 @@
     position: relative;
     display: inline-block;
 }
-
 .services-heading::after {
     content: '';
     position: absolute;
@@ -435,19 +421,16 @@
     left: 25%;
     background-color: #abb1b6;
 }
-
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .services-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
-
 .service-card {
     display: flex;
     flex-direction: column;
@@ -462,12 +445,10 @@
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
 .service-card.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 .service-icon {
     background: gray;
     color: white;
@@ -481,7 +462,6 @@
     font-size: 20px;
     transition: background-color 0.3s ease;
 }
-
 .service-title {
     font-size: 20px;
     margin-bottom: 15px;
@@ -489,7 +469,6 @@
     font-weight: 800;
     text-align: center;
 }
-
 .service-description {
     text-align: center;
     color: #666;
