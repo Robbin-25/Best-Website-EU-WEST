@@ -17,7 +17,7 @@
     color: #283618;
     padding: 6px 7px;
     margin: 30px 10%;
-    border-radius: 20px;
+    border-radius: 25px;
     z-index: 1000;
     max-height: 60px;
     transition: background-color 0.5s ease-in-out;
@@ -39,8 +39,9 @@
     margin-left: 3vw;
 }
 .nav-button{
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #705D46;
+    box-shadow: 0 1px 5px #705D46;
     transition: background-color 0.5s ease-in-out;
 }
 .nav-button li{
