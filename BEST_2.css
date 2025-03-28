@@ -396,13 +396,14 @@
 
  /* Service ------------------------------------------------------------------------------------------------------------------------*/
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 
 .scroll-space {
@@ -412,7 +413,7 @@
 .services-section {
     text-align: center;
     padding: 50px 40px;
-    background-color: white;
+    background-color: #f9f9f9;
 }
 
 .services-heading {
@@ -459,8 +460,6 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .service-card.visible {
@@ -482,10 +481,6 @@
     transition: background-color 0.3s ease;
 }
 
-.service-icon:hover {
-    background-color: #333;
-}
-
 .service-title {
     font-size: 20px;
     margin-bottom: 15px;
@@ -502,7 +497,6 @@
     max-width: 300px;
     margin: 0 auto;
 }
-
 
 /* Chess-Grid ------------------------------------------------------------------------------------------------------------------------*/
 .chess-section {
