@@ -599,55 +599,16 @@
     transform: translateX(0);
 }
 /* Porto-Section ------------------------------------------------------------------------------------------------------------------------*/
-.work-section-unique {
-    padding: 50px 30px;
-    background: linear-gradient(200deg, #90785A, #E6CCB2);
-    opacity: 1; /* Section bleibt direkt sichtbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-.img-title-unique {
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 50px;
-}
-
-
-.work-wrapper-unique {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-}
-
-
-.work-card {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: default;
-    position: relative;
-    border-radius: 15px;
-    width: 350px;
-    max-width: 100%;
-    height: 600px;
-    overflow: hidden;
-    opacity: 0; /* Karten sind unsichtbar, bis sie animiert werden */
-}
-
-
-.work-card-1 {
-    background-image: url(bl5.jpg);
-}
-.work-card-2 {
-    background-image: url(bl6.jpg);
-}
-.work-card-3 {
-    background-image: url(bl43.jpg);
-}
-
-
+/* Animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -659,12 +620,77 @@
     }
 }
 
+/* Section ohne Animation */
+.work-section-unique {
+    padding: 50px 30px;
+    background: linear-gradient(200deg, #90785A, #E6CCB2);
+    opacity: 1; /* sichtbar von Anfang an */
+}
 
-.work-card-1.animate { animation: fadeInUp 1s ease forwards; animation-delay: 0.4s; }
-.work-card-2.animate { animation: fadeInUp 1s ease forwards; animation-delay: 0.6s; }
-.work-card-3.animate { animation: fadeInUp 1s ease forwards; animation-delay: 0.8s; }
+/* Wrapper */
+.work-wrapper-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Titel */
+.work-title-custom {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
 
+/* Container */
+.work-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Karten */
+.work-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: default;
+    position: relative;
+    border-radius: 15px;
+    width: 350px;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* Hintergrundbilder für jede Karte */
+.work-card-1 {
+    background-image: url(bl5.jpg);
+}
+.work-card-2 {
+    background-image: url(bl6.jpg);
+}
+.work-card-3 {
+    background-image: url(bl43.jpg);
+}
+
+/* Animation nur für Karten */
+.work-card-1.animate {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.4s;
+}
+.work-card-2.animate {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.6s;
+}
+.work-card-3.animate {
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* Karten-Inhalt */
 .work-card-content {
     position: absolute;
     bottom: 0;
@@ -677,20 +703,21 @@
     background: rgba(0, 0, 0, 0.7);
 }
 
-
+/* Überschrift */
 .work-card-heading {
     font-size: 1rem;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
-
-.work-card-paragraph {
+/* Text */
+.work-card-text {
     font-size: 1rem;
     margin-bottom: 15px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
- 
+/* Trennlinie */
 .work-divider {
     display: block;
     width: 100%;
@@ -699,7 +726,7 @@
     margin: 15px 0;
 }
 
-
+/* Explore Button */
 .work-explore {
     font-size: 0.9rem;
     cursor: pointer;
@@ -711,7 +738,7 @@
     color: #cccccc;
 }
 
-
+/* Pfeil Animation */
 .work-arrow {
     display: inline-block;
     margin-left: 5px;
