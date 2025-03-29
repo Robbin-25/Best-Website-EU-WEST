@@ -599,6 +599,28 @@
     opacity: 1;
     transform: translateX(0);
 }
+@media only screen and (max-width: 900px){
+.porto-container {
+    display: flex;
+    max-width: 550px;
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    gap: 20px;
+}
+.porto-div1, .porto-div2 {
+    text-align: center;
+    max-width: 550px;
+    width: 100%;
+}
+.porto-stats {
+    bottom: 350px;
+    gap: 0px;
+    margin-left: 10%;
+    width: 90vw;
+}}
 
 /* FAQ-Section ------------------------------------------------------------------------------------------------------------------------*/
 .faq-section {
@@ -607,10 +629,10 @@
     text-align: center;
     justify-content: center;
     padding: 100px 0;
+    gap: 50px;
 }
 .faq-left{
     margin-top: 50px;
-    margin-right: 50px;
 }
 .faq-title{
     font-size: 35px;
@@ -691,6 +713,25 @@
 }
 .faq-img.show {
     opacity: 1;
+}
+@media only screen and (max-width: 900px){
+.faq-section{
+    flex-direction: column-reverse;
+}
+.faq-left{
+    margin-top: 0px;
+    margin: auto;
+    max-width: 550px;
+    width: 90%;
+}
+.faq-container {
+    width: 100%;
+}
+.faq-img {
+    margin: auto;
+    max-width: 550px;
+    width: 90%;
+}
 }
 
 /* Cta Section ------------------------------------------------------------------------------------------------------------------------*/
