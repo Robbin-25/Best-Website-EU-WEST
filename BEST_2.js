@@ -87,3 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(statsSection);
 });
+
+// Work -----------------------------------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+    
+            const section = document.querySelector('.work-section-unique');
+            const cards = document.querySelectorAll('.work-card-1, .work-card-2, .work-card-3');
+    
+            observer.observe(section);
+            cards.forEach(card => observer.observe(card));
+        });
