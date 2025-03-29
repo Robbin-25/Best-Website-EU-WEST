@@ -88,6 +88,27 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(statsSection);
 });
 
+// FAQ-Section -----------------------------------------------------------------------------------------------------
+function toggleFAQ(element) {
+    let faqItem = element.parentElement;
+    faqItem.classList.toggle("active");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const image = document.querySelector(".faq-img");
+    const faqSection = document.querySelector(".faq-section");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                image.classList.add("show");
+            } else {
+                image.classList.remove("show");
+            }
+        });
+    }, { threshold: 0.5 });
+    observer.observe(faqSection);
+});
+
 // Work -----------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver((entries) => {
