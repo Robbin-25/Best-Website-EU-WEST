@@ -694,6 +694,80 @@
     opacity: 1;
 }
 
+/* Cta Section ------------------------------------------------------------------------------------------------------------------------*/
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.cta-box {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2023/03/11/18/47/waterfall-7845023_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.cta-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.cta-box * {
+    position: relative;
+    z-index: 3;
+}
+
+.cta-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cta-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #6F5846, #CBB894);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #5A4536, #B39C79);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.cta-arrow {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .cta-arrow {
+    transform: translateX(4px);
+}
+
 /* Work section ------------------------------------------------------------------------------------------------------------------------*/
 @keyframes fadeInUp {
     from {
