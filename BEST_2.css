@@ -481,9 +481,9 @@
 /* Chess-Grid ------------------------------------------------------------------------------------------------------------------------*/
 .chess-section {
     width: 100%;
-    margin: 50px 0;
     overflow: hidden;
-    padding: 40px 0;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 .chess-content {
     display: flex;
@@ -543,8 +543,8 @@
     display: flex;
     width: 1120px;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 270px;
     color: white;
     gap: 20px;
     position: relative; /* Macht die Stats relativ dazu */
@@ -579,7 +579,7 @@
 .porto-stats {
     display: flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     margin-left: 35%;    
     width: 65vw;
     padding: 30px;
@@ -606,8 +606,7 @@
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding: 100px 0;
 }
 .faq-left{
     margin-top: 50px;
@@ -693,7 +692,6 @@
 .faq-img.show {
     opacity: 1;
 }
-
 /* Cta Section ------------------------------------------------------------------------------------------------------------------------*/
 
 .cta-section {
