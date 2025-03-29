@@ -692,14 +692,13 @@
 .faq-img.show {
     opacity: 1;
 }
-/* Cta Section ------------------------------------------------------------------------------------------------------------------------*/
 
+/* Cta Section ------------------------------------------------------------------------------------------------------------------------*/
 .cta-section {
     display: flex;
     justify-content: center;
     padding: 0;
 }
-
 .cta-box {
     position: relative;
     color: white;
@@ -712,7 +711,6 @@
     background-repeat: no-repeat;
     z-index: 1;
 }
-
 .cta-box::before {
     content: "";
     position: absolute;
@@ -720,24 +718,20 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
-
 .cta-box * {
     position: relative;
     z-index: 3;
 }
-
 .cta-title {
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 600;
 }
-
 .cta-description {
     margin-bottom: 20px;
     font-size: 1rem;
     line-height: 1.6;
 }
-
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -752,16 +746,13 @@
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-
 .cta-button:hover {
     background: linear-gradient(135deg, #5A4536, #B39C79);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
-
 .cta-arrow {
     transition: transform 0.3s ease;
 }
-
 .cta-button:hover .cta-arrow {
     transform: translateX(4px);
 }
