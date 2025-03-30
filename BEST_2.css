@@ -511,7 +511,7 @@
     margin-bottom: 20px;
 }
 .chess-text {
-    width: 500px;
+    max-width: 700px;
     padding: 4%;
     transform: translateX(150%);
     opacity: 0;
