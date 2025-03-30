@@ -879,6 +879,7 @@
     font-size: 25px;
 }
 .faq-chess-container {
+    text-align: left;
     max-width: 1000px;
     margin: auto;
     width: 90%;
