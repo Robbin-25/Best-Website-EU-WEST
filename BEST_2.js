@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // FAQ-Section -----------------------------------------------------------------------------------------------------
 function toggleFAQ(element) {
     let faqItem = element.parentElement;
-    faqItem.classList.toggle("active");
+    faqItem.classList.toggle("faq-active");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                image.classList.add("show");
+                image.classList.add("faq-show");
             } else {
-                image.classList.remove("show");
+                image.classList.remove("faq-show");
             }
         });
     }, { threshold: 0.5 });
