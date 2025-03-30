@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 // FAQ-Chess-Section -----------------------------------------------------------------------------------------------------
-function toggleFAQ(element) {
+function toggleFAQChess(element) {
     let faqchessItem = element.parentElement;
     faqchessItem.classList.toggle("faq-chess-active");
 }
