@@ -567,13 +567,13 @@
     height: 500px;
 }
 .porto-div2 {
-    margin-top: 70px;
+    margin-top: 55px;
 }
 .porto-div2 img {
     height: 300px;
 }
 .porto-description {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 .porto-stats {
@@ -585,6 +585,7 @@
     padding: 30px;
     gap: 50px;
     text-align: center;
+    font-size: 25px;
     border-radius: 15px 0 0 15px;
     background-color: #6b4c2a;
     box-shadow: 0 3px 10px #a07240;
