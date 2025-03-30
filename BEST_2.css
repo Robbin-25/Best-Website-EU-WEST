@@ -1228,6 +1228,61 @@
     }
 
 /* FOOTER-SECTION------------------------------------------------------------------------------------------------------------------------*/
+
+
+.section-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #705D46, #ddba8d);
+    padding: 50px 30px;
+}
+
+.wrapper-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #705D46, #ddba8d);
+    width: 100%;
+}
+
+.container-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card-numbers {
+    width: 340px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px; 
+    padding: 20px; 
+}
+
+.num {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; 
+}
+
+.h2-numbers {
+    position: relative;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* FOOTER-SECTION------------------------------------------------------------------------------------------------------------------------*/
 .footer-section{
     background-color: #606c38;
     bottom: 0;
