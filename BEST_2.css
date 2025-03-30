@@ -1109,7 +1109,7 @@
 .infinity-grid-marquee {
     display: flex;
     min-width: 660vh; /* Mindestens doppelt so breit für nahtlose Bewegung */
-    animation: infinity-grid-marquee 10s linear infinite;
+    animation: infinity-grid-marquee 25s linear infinite;
 }
 @keyframes infinity-grid-marquee {
     from { transform: translateX(0); }
