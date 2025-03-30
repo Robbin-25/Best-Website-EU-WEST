@@ -109,6 +109,29 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(faqSection);
 });
 
+// Chess-FAQ-Section -----------------------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+    const contents = document.querySelectorAll(".chess-faq-content");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("chess-faq-show");
+            } else {
+                entry.target.classList.remove("chess-faq-show");
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    contents.forEach(content => {
+        observer.observe(content);
+    });
+});
+// FAQ-Chess-Section -----------------------------------------------------------------------------------------------------
+function toggleFAQ(element) {
+    let faqItem = element.parentElement;
+    faqItem.classList.toggle("faq-chess-active");
+}
+
 // Work -----------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver((entries) => {
