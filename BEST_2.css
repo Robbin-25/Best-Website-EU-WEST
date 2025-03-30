@@ -1065,6 +1065,7 @@
 
 .infinity-grid-section{
     overflow: hidden;
+    background-color: #f9f9f9;
 }
 .infinity-grid-grid{
     display: grid;
