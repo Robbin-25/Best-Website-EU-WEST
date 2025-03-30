@@ -150,6 +150,62 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => observer.observe(card));
     });
 
+// Num-----------------------------------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    // Observer für Animation der Karten
+    const cardObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    const cards = document.querySelectorAll('.work-card-1, .work-card-2, .work-card-3');
+    cards.forEach(card => cardObserver.observe(card));
+
+    // Observer für die Zahlen
+    const numberObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            let valueDisplay = entry.target;
+            let hasPlus = valueDisplay.getAttribute("data-plus") === "true";
+
+            if (entry.isIntersecting && !valueDisplay.classList.contains("animated")) {
+                valueDisplay.classList.add("animated");
+
+                let startValue = 0;
+                let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                let duration = Math.floor(3000 / endValue);
+
+                valueDisplay.textContent = hasPlus ? "+000" : "000";
+
+                let counter = setInterval(() => {
+                    startValue += 1;
+                    valueDisplay.textContent = hasPlus ? `+${startValue}` : `${startValue}`;
+
+                    if (startValue === endValue) {
+                        clearInterval(counter);
+                    }
+                }, duration);
+
+                entry.target.counter = counter;
+            } else if (!entry.isIntersecting && valueDisplay.classList.contains("animated")) {
+                clearInterval(entry.target.counter);
+                valueDisplay.classList.remove("animated");
+                valueDisplay.textContent = hasPlus ? "+000" : "000";
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.5
+    });
+
+    const valueDisplays = document.querySelectorAll(".num");
+    valueDisplays.forEach(num => numberObserver.observe(num));
+});
 
 
 
