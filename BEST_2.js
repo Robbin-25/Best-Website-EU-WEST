@@ -149,3 +149,44 @@ document.addEventListener('DOMContentLoaded', () => {
         const cards = document.querySelectorAll('.work-card-1, .work-card-2, .work-card-3');
         cards.forEach(card => observer.observe(card));
     });
+
+// Work -----------------------------------------------------------------------------------------------------
+
+let valueDisplay = document.querySelectorAll(".num");
+let interval = 3000; // Gesamtzeit für das Zählen
+
+let options = {
+    root: null,
+    threshold: 0.5
+};
+
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        let valueDisplay = entry.target;
+        let hasPlus = valueDisplay.getAttribute("data-plus") === "true"; // Prüft, ob Pluszeichen gesetzt wird
+
+        if (entry.isIntersecting) {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+
+            // Setze Startwert mit oder ohne Pluszeichen
+            valueDisplay.textContent = hasPlus ? "+000" : "000";
+
+            let counter = setInterval(() => {
+                startValue += 1;
+                valueDisplay.textContent = hasPlus ? `+${startValue}` : startValue;
+
+                if (startValue === endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+
+            entry.target.counter = counter;
+        } else {
+            clearInterval(entry.target.counter);
+        }
+    });
+}, options);
+
+valueDisplay.forEach(num => observer.observe(num));
