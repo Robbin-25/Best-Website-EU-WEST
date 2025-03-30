@@ -150,4 +150,49 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => observer.observe(card));
     });
 
+// num -----------------------------------------------------------------------------------------------------
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 3000; // Gesamtzeit für das Zählen
+
+let options = {
+    root: null,
+    threshold: 0.5
+};
+
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        let valueDisplay = entry.target;
+        let hasPlus = valueDisplay.getAttribute("data-plus") === "true";
+
+        if (entry.isIntersecting && !valueDisplay.classList.contains("animated")) {
+            valueDisplay.classList.add("animated");
+
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+
+            valueDisplay.textContent = hasPlus ? "+000" : "000";
+
+            let counter = setInterval(() => {
+                startValue += 1;
+                valueDisplay.textContent = hasPlus ? `+${startValue}` : `${startValue}`;
+
+                if (startValue === endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+
+            entry.target.counter = counter;
+        } else if (!entry.isIntersecting && valueDisplay.classList.contains("animated")) {
+            // Optional: zurücksetzen beim Verlassen des Viewports
+            clearInterval(entry.target.counter);
+            valueDisplay.classList.remove("animated");
+            valueDisplay.textContent = hasPlus ? "+000" : "000";
+        }
+    });
+}, options);
+
+valueDisplays.forEach(num => observer.observe(num));
+
+
 
