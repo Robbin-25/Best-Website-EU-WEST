@@ -150,44 +150,4 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => observer.observe(card));
     });
 
-// Num -----------------------------------------------------------------------------------------------------
-let valueDisplays = document.querySelectorAll(".num");
-let interval = 3000;
-
-let options = {
-    root: null,
-    threshold: 0.5
-};
-
-let observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        let el = entry.target;
-        let hasPlus = el.getAttribute("data-plus") === "true";
-
-        if (entry.isIntersecting) {
-            let startValue = 0;
-            let endValue = parseInt(el.getAttribute("data-val")) || 0;
-            let duration = Math.floor(interval / endValue);
-
-            el.textContent = hasPlus ? "+000" : "000";
-
-            let counter = setInterval(() => {
-                startValue += 1;
-                el.textContent = hasPlus ? `+${startValue}` : startValue;
-
-                if (startValue === endValue) {
-                    clearInterval(counter);
-                }
-            }, duration);
-
-            el.counter = counter;
-        } else {
-            if (el.counter) {
-                clearInterval(el.counter);
-            }
-        }
-    });
-}, options);
-
-valueDisplays.forEach(num => observer.observe(num));
 
