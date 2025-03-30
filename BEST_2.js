@@ -151,9 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 // Num -----------------------------------------------------------------------------------------------------
-
-let valueDisplay = document.querySelectorAll(".num");
-let interval = 3000; // Gesamtzeit für das Zählen
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 3000;
 
 let options = {
     root: null,
@@ -162,31 +161,33 @@ let options = {
 
 let observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        let valueDisplay = entry.target;
-        let hasPlus = valueDisplay.getAttribute("data-plus") === "true"; // Prüft, ob Pluszeichen gesetzt wird
+        let el = entry.target;
+        let hasPlus = el.getAttribute("data-plus") === "true";
 
         if (entry.isIntersecting) {
             let startValue = 0;
-            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let endValue = parseInt(el.getAttribute("data-val")) || 0;
             let duration = Math.floor(interval / endValue);
 
-            // Setze Startwert mit oder ohne Pluszeichen
-            valueDisplay.textContent = hasPlus ? "+000" : "000";
+            el.textContent = hasPlus ? "+000" : "000";
 
             let counter = setInterval(() => {
                 startValue += 1;
-                valueDisplay.textContent = hasPlus ? `+${startValue}` : startValue;
+                el.textContent = hasPlus ? `+${startValue}` : startValue;
 
                 if (startValue === endValue) {
                     clearInterval(counter);
                 }
             }, duration);
 
-            entry.target.counter = counter;
+            el.counter = counter;
         } else {
-            clearInterval(entry.target.counter);
+            if (el.counter) {
+                clearInterval(el.counter);
+            }
         }
     });
 }, options);
 
-valueDisplay.forEach(num => observer.observe(num));
+valueDisplays.forEach(num => observer.observe(num));
+
