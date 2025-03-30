@@ -55,7 +55,7 @@ cards.forEach(card => {
 
 // Chess -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".chess-content");
+    const chesscontents = document.querySelectorAll(".chess-content");
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -66,26 +66,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.3 });
     
-    contents.forEach(content => {
+    chesscontents.forEach(content => {
         observer.observe(content);
     });
 });
 
 // Porto -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const statsSection = document.querySelector(".porto-stats");
+    const portostatsSection = document.querySelector(".porto-stats");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                statsSection.classList.add("porto-show-stats");
+                portostatsSection.classList.add("porto-show-stats");
             } else {
-                statsSection.classList.remove("porto-show-stats"); // Entfernt die Klasse, wenn sie nicht sichtbar ist
+                portostatsSection.classList.remove("porto-show-stats"); // Entfernt die Klasse, wenn sie nicht sichtbar ist
             }
         });
     }, { threshold: 0.3 });
 
-    observer.observe(statsSection);
+    observer.observe(portostatsSection);
 });
 
 // FAQ-Section -----------------------------------------------------------------------------------------------------
@@ -95,14 +95,14 @@ function toggleFAQ(element) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const image = document.querySelector(".faq-img");
+    const faqimage = document.querySelector(".faq-img");
     const faqSection = document.querySelector(".faq-section");
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                image.classList.add("faq-show");
+                faqimage.classList.add("faq-show");
             } else {
-                image.classList.remove("faq-show");
+                faqimage.classList.remove("faq-show");
             }
         });
     }, { threshold: 0.5 });
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Chess-FAQ-Section -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const contents = document.querySelectorAll(".chess-faq-content");
+    const chessfaqcontents = document.querySelectorAll(".chess-faq-content");
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -122,14 +122,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, { threshold: 0.3 });
     
-    contents.forEach(content => {
+    chessfaqcontents.forEach(content => {
         observer.observe(content);
     });
 });
 // FAQ-Chess-Section -----------------------------------------------------------------------------------------------------
 function toggleFAQ(element) {
-    let faqItem = element.parentElement;
-    faqItem.classList.toggle("faq-chess-active");
+    let faqchessItem = element.parentElement;
+    faqchessItem.classList.toggle("faq-chess-active");
 }
 
 // Work -----------------------------------------------------------------------------------------------------
