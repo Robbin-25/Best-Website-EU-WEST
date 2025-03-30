@@ -718,6 +718,9 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+.faq-left .faq-img{
+    height: 100%;
+}
 .faq-img.faq-show {
     opacity: 1;
 }
