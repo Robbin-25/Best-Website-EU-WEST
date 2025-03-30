@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => observer.observe(card));
     });
 
-// Work -----------------------------------------------------------------------------------------------------
+// Num -----------------------------------------------------------------------------------------------------
 
 let valueDisplay = document.querySelectorAll(".num");
 let interval = 3000; // Gesamtzeit für das Zählen
