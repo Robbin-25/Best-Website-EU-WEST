@@ -1042,3 +1042,69 @@
 .work-explore:hover .work-arrow {
     transform: translateX(4px);
 }
+
+/* Infinity-Grid ------------------------------------------------------------------------------------------------------------------------*/
+.infinity-grid-item1 { grid-area: a; }
+.infinity-grid-item2 { grid-area: b; }
+.infinity-grid-item3 { grid-area: c; }
+.infinity-grid-item4 { grid-area: d; }
+.infinity-grid-item5 { grid-area: e; }
+.infinity-grid-item6 { grid-area: f; }
+.infinity-grid-item7 { grid-area: g; }
+.infinity-grid-item8 { grid-area: h; }
+.infinity-grid-item9 { grid-area: i; }
+.infinity-grid-item10 { grid-area: j; }
+.infinity-grid-item11 { grid-area: k; }
+.infinity-grid-item12 { grid-area: l; }
+.infinity-grid-item13 { grid-area: m; }
+
+.infinity-grid-section{
+    overflow: hidden;
+}
+.infinity-grid-grid{
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 10px;
+    z-index: 1000;
+    height: 60vh;
+    margin: 100px 5px;
+}
+.infinity-grid-grid div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.infinity-grid-grid div img{
+    transition: transform 0.5s ease-in-out;
+    z-index: 500;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.infinity-grid-grid div :hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.infinity-grid-grid {
+    grid-template-areas:
+    'a a a a c c c d d d g g i i j j j j m m m m'
+    'a a a a c c c d d d g g h h j j j j m m m m'
+    'b b b b b b e e f f g g h h j j j j k k l l'
+    'b b b b b b e e f f g g h h j j j j k k l l';
+}  
+.infinity-grid-marquee-container {
+    width: 330vh;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+.infinity-grid-marquee {
+    display: flex;
+    min-width: 660vh; /* Mindestens doppelt so breit für nahtlose Bewegung */
+    animation: infinity-grid-marquee 10s linear infinite;
+}
+@keyframes infinity-grid-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Nur bis zur Hälfte, da der Inhalt doppelt ist */
+}
