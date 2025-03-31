@@ -28,11 +28,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// Loader -----------------------------------------------------------------------------------------------------
-    function loaderhandleImageError() {
-        document.querySelector('.loader-loader').innerHTML = "<h2>Fehler beim Laden der Bilder!</h2>";
-    }
-
+// Loader-Section -----------------------------------------------------------------------------------------------------
     window.onload = function() {
         document.querySelector('.loader-loader').style.display = 'none';
         document.getElementById('loader-content').style.display = 'block';
