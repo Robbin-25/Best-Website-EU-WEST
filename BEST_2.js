@@ -1,8 +1,3 @@
-// Loader-Section -----------------------------------------------------------------------------------------------------
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector('.loader-loader').style.display = 'none';
-});
-
 // Navbar -----------------------------------------------------------------------------------------------------
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");

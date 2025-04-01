@@ -11,11 +11,10 @@
 </head>
 <body>
 <!-- Loader-Section ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
-<div class="loader-loader">
-    <div class="loader-spinner"></div>
+<div id="preloader">
+    <div class="spinner"></div>
 </div>
 
-<div id="loader-content" style="display: none;">
 <!--Navbar ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <nav class="navbar">
         <img class="nav-logo" src="1.jpg" alt="">
@@ -454,6 +453,7 @@
       </div>
     </div>
   </section>
+
 <!--  numbers------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
     <section class="section-numbers">
         <div class="wrapper-numbers">
@@ -477,6 +477,7 @@
             </div>
         </div>
     </section>
+
 <!-- Timeline ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
      <div class="timeline-wrapper">
         <section class="section-timeline">
@@ -606,14 +607,15 @@
         <p>ALL Rights Have been Reserved / 2024</p>
     </div>
 </footer>
-</div>
 
 <script>
-    window.onload = function() {
-        document.querySelector('.loader-loader').style.display = 'none';
-        document.getElementById('loader-content').style.display = 'block';
-    };
+    window.addEventListener("load", function () {
+        document.getElementById("preloader").style.display = "none";
+    });
 </script>
     
 <!-- Java-Script ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
 <script src="BEST_2.js"></script>
+
+</body>
+</html>
