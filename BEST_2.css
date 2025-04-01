@@ -64,7 +64,7 @@
 }
 .nav-button{
     border-radius: 20px;
-    background: linear-gradient(to right, #b69a77, #ddba8d);
+    background: linear-gradient(to right, #705D46, #ddba8d);
     box-shadow: 0 1px 5px #705D46;
     transition: background-color 0.5s ease-in-out;
 }
