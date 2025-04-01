@@ -57,7 +57,7 @@
     color: #705D46
 }
 .navbar.scrolled .nav-button{
-    background-color: white;
+    background: white;
 }
 .nav-links li {
     margin-left: 3vw;
