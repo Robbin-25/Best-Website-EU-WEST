@@ -1,3 +1,8 @@
+// Loader-Section -----------------------------------------------------------------------------------------------------
+window.onload = function() {
+    document.querySelector('.loader-loader').style.display = 'none';
+};
+
 // Navbar -----------------------------------------------------------------------------------------------------
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
@@ -27,12 +32,6 @@ window.addEventListener("scroll", function () {
       navbar.classList.remove("scrolled");
     }
 });
-
-// Loader-Section -----------------------------------------------------------------------------------------------------
-    window.onload = function() {
-        document.querySelector('.loader-loader').style.display = 'none';
-        document.getElementById('loader-content').style.display = 'block';
-    };
 
 // Hero -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
