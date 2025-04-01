@@ -1447,7 +1447,7 @@
 
 /* FOOTER-SECTION------------------------------------------------------------------------------------------------------------------------*/
 .footer-section{
-    background-color: #606c38;
+    background-color: #6b4c2a;
     bottom: 0;
     padding: 20px;
 }
@@ -1457,7 +1457,7 @@
     padding: auto;
 }
 .footer-col{
-    color: #a3b18a;
+    color: #c0a07f;
     margin: 20px auto;
     text-align: center;
     width: 220px;
@@ -1474,7 +1474,7 @@
     font-size: 18px;
 }
 .footer-line{
-    background-color: #a3b18a;
+    background: linear-gradient(to right, #c0a07f, #a07240);
     height: 3px;
 }
 .footer-rights{
@@ -1512,6 +1512,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 }
+
 @media only screen and (min-width: 1600px){
 .footer-text{
     font-size: 27px;
