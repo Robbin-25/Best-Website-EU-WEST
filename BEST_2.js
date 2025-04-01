@@ -155,6 +155,29 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => observer.observe(card));
     });
 
+// Viwer-Section -----------------------------------------------------------------------------------------------------
+const galleryItems = document.querySelectorAll('.image-grid-standard, .image-grid-wide');
+const lightbox = document.getElementById('image-viewer');
+const lightboxImg = document.getElementById('viewer-img');
+const closeBtn = document.querySelector('.viewer-close');
+
+galleryItems.forEach((item) => {
+    item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = item.querySelector('img').src;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+document.addEventListener('click', (event) => {
+    if (event.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});
+
 // Num-----------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
     // Observer für Animation der Karten
