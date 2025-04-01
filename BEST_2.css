@@ -17,7 +17,6 @@
     align-items: center;
     z-index: 9999;
 }
-
 .spinner {
     width: 50px;
     height: 50px;
@@ -26,7 +25,6 @@
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -289,25 +287,25 @@
 }
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .h1-hero {
-        font-size: 2.5rem;
-    }
-    
-    .hero-p {
-        font-size: 1.2rem;
-    }
+.h1-hero {
+    font-size: 2.5rem;
+}
+
+.hero-p {
+    font-size: 1.2rem;
+}
 }
 @media (max-width: 480px) {
-    .h1-hero {
-        font-size: 2rem;
-    }
-    .buttons-hero {
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn-hero {
-        width: 160px;
-    }
+.h1-hero {
+    font-size: 2rem;
+}
+.buttons-hero {
+    flex-direction: column;
+    align-items: center;
+}
+.btn-hero {
+    width: 160px;
+}
 }
 .gradient-text {
     background: linear-gradient(to right, #705D46, #D6B386);
@@ -1149,118 +1147,103 @@
 
 /* Testimonial------------------------------------------------------------------------------------------------------------------------*/
 .testimonial-section {
-      text-align: center;
-      padding: 60px 30px;
-      background-color: white;
-    }
-
-    .testimonial-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .testimonial-title {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-  color: black; /* rest of title is black */
+    text-align: center;
+    padding: 60px 30px;
+    background-color: white;
 }
-
+.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: black; /* rest of title is black */
+}
 .underline {
-  position: relative;
-  display: inline-block;
-  color: #2563eb; /* only "Testimonials" is blue */
+    position: relative;
+    display: inline-block;
+    color: #2563eb; /* only "Testimonials" is blue */
 }
-
 .underline::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 4px;
-  background-color: #2563eb;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2px;
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #2563eb;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
-
-    .testimonial-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 20px;
-    }
-
-    .testimonial-card {
-      height: 250px;
-      width: 300px;
-      background-color: #eef1f1;
-      position: relative;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    .testimonial-profile {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      position: absolute;
-      top: -25px;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 3px solid white;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-      object-fit: cover;
-    }
-
-    .testimonial-content {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .testimonial-name {
-      font-size: 1.2rem;
-      color: black;
-    }
-
-    .testimonial-text {
-      color: #a8a8a8;
-      font-size: 0.9rem;
-      margin-top: 5px;
-    }
-
-    .testimonial-stars {
-      position: absolute;
-      bottom: 35px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .testimonial-icon {
-      color: #c6a07c;
-      font-size: 1.2rem;
-      margin: 2px;
-    }
-
-    .testimonial-date {
-      position: absolute;
-      bottom: 15px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.8rem;
-      color: #a8a8a8;
-    }
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.testimonial-card {
+    height: 250px;
+    width: 300px;
+    background-color: #eef1f1;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.testimonial-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+.testimonial-content {
+    text-align: center;
+    margin-top: 40px;
+}
+.testimonial-name {
+    font-size: 1.2rem;
+    color: black;
+}
+.testimonial-text {
+    color: #a8a8a8;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.testimonial-stars {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.testimonial-icon {
+    color: #c6a07c;
+    font-size: 1.2rem;
+    margin: 2px;
+}
+.testimonial-date {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #a8a8a8;
+}
 
 /* Numbers------------------------------------------------------------------------------------------------------------------------*/
-
-
 .section-numbers {
     display: flex;
     align-items: center;
@@ -1268,7 +1251,6 @@
     background: linear-gradient(to right, #705D46, #ddba8d);
     padding: 50px 30px;
 }
-
 .wrapper-numbers {
     display: flex;
     justify-content: center;
@@ -1276,7 +1258,6 @@
     background: linear-gradient(to right, #705D46, #ddba8d);
     width: 100%;
 }
-
 .container-numbers {
     display: flex;
     flex-wrap: wrap;
@@ -1284,7 +1265,6 @@
     gap: 30px;
     padding: 20px;
 }
-
 .card-numbers {
     width: 340px;
     height: 200px;
@@ -1296,14 +1276,12 @@
     border-radius: 15px; 
     padding: 20px; 
 }
-
 .num {
     font-size: 3rem;
     font-weight: bold;
     color: white;
     margin-bottom: 10px; 
 }
-
 .h2-numbers {
     position: relative;
     font-size: 1.6rem;
@@ -1313,43 +1291,34 @@
 }
 
 /* Timeline------------------------------------------------------------------------------------------------------------------------*/
-
 .timeline-wrapper * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .section-timeline {
     background-color: #ffffff;
     color: #343a40;
     line-height: 1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .timeline-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
 }
-
 .h1-timeline {
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: #212529;
 }
-
 .timeline {
     position: relative;
     padding: 20px 0;
     min-height: 2000px;
 }
-
-
-
-
 .timeline::before {
     content: '';
     position: absolute;
@@ -1361,7 +1330,6 @@
     margin-left: -3px;
     z-index: 0;
 }
-
 .timeline-progress {
     position: absolute;
     width: 6px;
@@ -1373,7 +1341,6 @@
     z-index: 1;
     transition: height 0.3s ease;
 }
-
 .timeline-item {
     padding: 10px 50px;
     position: relative;
@@ -1383,20 +1350,16 @@
     transition: all 0.5s ease;
     margin-bottom: 60px;
 }
-
 .timeline-item.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 .timeline-item:nth-child(odd) {
     left: 0;
 }
-
 .timeline-item:nth-child(even) {
     left: 50%;
 }
-
 .timeline-item::after {
     content: '';
     position: absolute;
@@ -1409,27 +1372,22 @@
     z-index: 100000;
     transition: background-color 0.3s ease;
 }
-
 .timeline-item.active::after {
     background-color: #705D46; 
     border-color: #fff;
 }
-
 .timeline-item:nth-child(odd)::after {
     right: -19px;
 }
-
 .timeline-item:nth-child(even)::after {
     left: -19px;
 }
-
 .timeline-content {
     padding: 20px 30px;
     position: relative;
     border-radius: 6px;
     background: #ffffff;
 }
-
 .timeline-content::after {
     content: '';
     position: absolute;
@@ -1437,68 +1395,55 @@
     border-style: solid;
     top: 15px;
 }
-
 .timeline-item:nth-child(odd) .timeline-content::after {
     border-color: transparent transparent transparent white;
     right: -20px;
 }
-
 .timeline-item:nth-child(even) .timeline-content::after {
     border-color: transparent white transparent transparent;
     left: -20px;
 }
-
 .timeline-date {
     color: #007bff;
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
-
 .timeline-title {
     margin-bottom: 10px;
     font-size: 1.4rem;
 }
-
 .timeline-description {
     font-size: 1rem;
     color: #495057;
 }
-
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    .timeline::before {
-        left: 31px;
-    }
-
-    .timeline-progress {
-        left: 31px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        left: 0;
-    }
-
-    .timeline-item:nth-child(odd)::after,
-    .timeline-item:nth-child(even)::after {
-        left: 15px;
-    }
-
-    .timeline-item:nth-child(odd) .timeline-content::after,
-    .timeline-item:nth-child(even) .timeline-content::after {
-        left: -20px;
-        border-color: transparent white transparent transparent;
-    }
+.timeline::before {
+    left: 31px;
 }
-
-
+.timeline-progress {
+    left: 31px;
+}
+.timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even) {
+    left: 0;
+}
+.timeline-item:nth-child(odd)::after,
+.timeline-item:nth-child(even)::after {
+    left: 15px;
+}
+.timeline-item:nth-child(odd) .timeline-content::after,
+.timeline-item:nth-child(even) .timeline-content::after {
+    left: -20px;
+    border-color: transparent white transparent transparent;
+}
+}
 
 /* FOOTER-SECTION------------------------------------------------------------------------------------------------------------------------*/
 .footer-section{
@@ -1567,7 +1512,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 }
-
 @media only screen and (min-width: 1600px){
 .footer-text{
     font-size: 27px;
