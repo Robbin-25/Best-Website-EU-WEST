@@ -329,3 +329,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Footer-Year -----------------------------------------------------------------------------------------------------
 document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year1").textContent = new Date().getFullYear();
