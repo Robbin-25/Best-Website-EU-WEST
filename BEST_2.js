@@ -156,27 +156,74 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 // Viwer-Section -----------------------------------------------------------------------------------------------------
-const galleryItems = document.querySelectorAll('.image-grid-standard, .image-grid-wide');
-const lightbox = document.getElementById('image-viewer');
-const lightboxImg = document.getElementById('viewer-img');
-const closeBtn = document.querySelector('.viewer-close');
+    document.addEventListener("DOMContentLoaded", function () {
+        const galleryItems = document.querySelectorAll('.image-grid-wide img'); 
+        const lightbox = document.getElementById('image-viewer');
+        const lightboxImg = document.getElementById('viewer-img');
+        const closeBtn = document.querySelector('.viewer-close');
+        const marquee = document.querySelector('.infinity-grid-marquee');
 
-galleryItems.forEach((item) => {
-    item.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxImg.src = item.querySelector('img').src;
+        let isPopupOpen = false;
+
+        // Funktion zum Stoppen der Animation
+        function stopMarquee() {
+            marquee.style.animationPlayState = 'paused';
+        }
+        
+        // Funktion zum Starten der Animation (nur wenn das Pop-up geschlossen ist)
+        function startMarquee() {
+            if (!isPopupOpen) {
+                marquee.style.animationPlayState = 'running';
+            }
+        }
+
+        // Überwacht die Mausposition relativ zum Bild
+        galleryItems.forEach((img) => {
+            img.addEventListener('mousemove', function (event) {
+                const rect = img.getBoundingClientRect();
+                const mouseX = event.clientX - rect.left; // Mausposition relativ zum Bild
+                const mouseY = event.clientY - rect.top;  // Mausposition relativ zum Bild
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                // Stoppt die Animation nur, wenn die Maus relativ mittig über dem Bild ist
+                if (Math.abs(mouseX - centerX) < rect.width * 0.25 && Math.abs(mouseY - centerY) < rect.height * 0.25) {
+                    stopMarquee();
+                } else {
+                    startMarquee();
+                }
+            });
+
+            // Falls die Maus das Bild verlässt, Animation wieder starten
+            img.addEventListener('mouseleave', startMarquee);
+        });
+
+        // Klick auf ein Bild öffnet das Pop-up und stoppt die Animation
+        galleryItems.forEach((img) => {
+            img.addEventListener('click', function () {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = this.src;
+                isPopupOpen = true; 
+                stopMarquee();
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            isPopupOpen = false;
+            startMarquee();
+            document.body.style.overflow = '';
+        }
+
+        closeBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', function (event) {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
     });
-});
-
-closeBtn.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-});
-
-document.addEventListener('click', (event) => {
-    if (event.target === lightbox) {
-        lightbox.style.display = 'none';
-    }
-});
 
 // Num-----------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
