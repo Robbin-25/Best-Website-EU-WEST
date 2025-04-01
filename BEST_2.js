@@ -1,7 +1,7 @@
 // Loader-Section -----------------------------------------------------------------------------------------------------
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.loader-loader').style.display = 'none';
-};
+});
 
 // Navbar -----------------------------------------------------------------------------------------------------
 function toggleMenu() {
