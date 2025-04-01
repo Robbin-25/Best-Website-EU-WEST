@@ -1485,6 +1485,9 @@
 .footer-rights p{
     font-size: 14px;
 }
+.footer-rights p span{
+    font-size: 14px;
+}
 .footer-social a{
     display: block;
     color: #dad7cd;
@@ -1527,6 +1530,9 @@
     font-size: 27px;
 }
 .footer-rights p{
+    font-size: 20px;
+}
+.footer-rights p span{
     font-size: 20px;
 }
 .footer-social a{

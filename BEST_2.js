@@ -1,3 +1,8 @@
+// loader-Section -----------------------------------------------------------------------------------------------------
+window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
+});
+
 // Navbar -----------------------------------------------------------------------------------------------------
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
@@ -322,4 +327,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 });
 
-
+// Footer-Year -----------------------------------------------------------------------------------------------------
+document.getElementById("year").textContent = new Date().getFullYear();
