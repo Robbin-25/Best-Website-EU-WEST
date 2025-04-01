@@ -1148,7 +1148,7 @@
 .image-viewer {
     display: none;
     position: fixed;
-    z-index: 100;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
