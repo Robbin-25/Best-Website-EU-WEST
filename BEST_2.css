@@ -419,7 +419,7 @@
    font-size: 20px;
 }
 
- /* Service ------------------------------------------------------------------------------------------------------------------------*/
+/* Service ------------------------------------------------------------------------------------------------------------------------*/
 .scroll-space {
     height: 100vh;
 }
@@ -566,7 +566,8 @@
 }
 .porto-container {
     display: flex;
-    width: 1120px;
+    max-width: 1120px;
+    width: 90%;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 270px;
@@ -577,7 +578,7 @@
 .porto-div1, .porto-div2 {
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 50%;
     gap: 20px;
 }
 .porto-div1 {
@@ -625,7 +626,7 @@
     opacity: 1;
     transform: translateX(0);
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 800px){
 .porto-container {
     display: flex;
     max-width: 550px;
@@ -735,15 +736,12 @@
 }
 .faq-img {
     max-width: 450px;
-    width: 40%;
+    width: 50%;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 1s ease-in-out;
-}
-.faq-left .faq-img{
-    max-height: 100%;
 }
 .faq-img.faq-show {
     opacity: 1;
@@ -889,6 +887,7 @@
     transform: translateX(0);
     opacity: 1;
 }
+
 /* FAQ-Chess-Section ------------------------------------------------------------------------------------------------------------------------*/
 .faq-chess-section {
     display: flex;
@@ -896,6 +895,7 @@
     text-align: center;
     justify-content: center;
     padding: 100px 0;
+    background-color: #f9f9f9;
 }
 .faq-chess-title{
     font-size: 35px;
