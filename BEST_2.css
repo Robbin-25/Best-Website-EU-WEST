@@ -1648,11 +1648,11 @@
 }
 .footer-rights p{
     font-size: clamp(0.8rem, 0.9vw, 1rem);
-    font-weight: lighter;
+    font-weight: 350;
 }
 .footer-rights p span{
     font-size: clamp(0.8rem, 0.9vw, 1rem);
-    font-weight: lighter;
+    font-weight: 350;
 }
 .footer-social a{
     display: block;
