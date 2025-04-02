@@ -322,26 +322,24 @@
  }
 
  /* About ------------------------------------------------------------------------------------------------------------------------*/
-.about-section {
-            padding: 70px 30px;
-            font-family: 'Poppins';
-        }
+          .about-section {
+           padding: 70px 30px;
+           font-family: 'Poppins';
+         }
         
-        .about-container {
-            max-width: 1000px;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: stretch;
-            justify-content: space-between;
-        }
-        
-        .about-image-wrapper {
+          .about-container {
+           max-width: 1000px;
+           margin: auto;
+           display: flex;
+           flex-wrap: wrap;
+           align-items: stretch;
+           justify-content: space-between;
+       } 
+          .about-image-wrapper {
             position: relative;
             width: 50%;
             height: 565px;
         }
-        
         .about-main-image {
             width: 90%;
             height: 577px;
@@ -349,7 +347,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
         .about-overlay-image {
             position: absolute;
             bottom: -52px;
@@ -360,7 +357,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
         .about-text-wrapper {
             width: 45%;
             height: 550px;
@@ -368,12 +364,10 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        
         .about-title {
             margin: 0;
             padding-top: 0;
-        }
-        
+        }  
         .text-gradient {
             background: linear-gradient(to right, #000000, #333333);
             -webkit-background-clip: text;
@@ -398,12 +392,10 @@
             width: 3px;
             background: linear-gradient(to bottom, #705D46, #ddba8d);
         }
-        
         .about-divider-text {
             font-size: 0.9rem;
             color: #35383b;
         }
-        
         .about-description {
             color: gray;
             flex-grow: 1;
@@ -411,19 +403,16 @@
             align-items: center;
             margin: 20px 0;
         }
-        
         .about-main-text {
             color: black;
             font-weight: 500;
             font-size: 20px;
-        }
-        
+        }   
         .about-button-wrapper {
             align-self: flex-start;
             margin-top: auto;
             padding-bottom: 5px;
         }
-        
         .about-button {
             border: none;
             padding: 12px 24px;
@@ -433,33 +422,27 @@
             border-radius: 5px;
             transition: background 0.3s, color 0.3s;
         }
-        
         .about-button:hover {
             background: black;
             color: white;
         }
-        
         .about-button-gradient {
             background: linear-gradient(to right, #705D46, #ddba8d);
         }
-        
         /* Responsive Styles */
         @media (max-width: 1000px) {
             .about-container {
                 flex-direction: column;
             }
-            
             .about-image-wrapper {
                 width: 100%;
                 height: 300px;
                 margin-bottom: 30px;
             }
-            
             .about-main-image {
                 width: 100%;
                 height: 300px;
             }
-            
             .about-overlay-image {
                 width: 120px;
                 height: 120px;
@@ -468,21 +451,17 @@
                 right: -15px;
                 transform: translateY(-50%);
             }
-            
             .about-text-wrapper {
                 width: 100%;
                 height: auto;
                 text-align: left;
             }
-            
             .about-title {
                 margin-top: 20px;
             }
-            
             .text-gradient {
                 font-size: 2rem;
             }
-            
             .about-button-wrapper {
                 margin-top: 20px;
             }
