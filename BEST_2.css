@@ -380,6 +380,7 @@
         min-width: 100px;
     }
 }
+
  /* About ------------------------------------------------------------------------------------------------------------------------*/
 .about-section {
     padding: 70px 30px;
@@ -646,7 +647,7 @@
     transform: translateX(70%);
 }
 .chess-text h2{
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.2rem);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -654,7 +655,7 @@
     width: 45%;
     max-width: 1000px;
     padding: 4%;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
     transform: translateX(150%);
     opacity: 0;
@@ -665,13 +666,13 @@
 }
 .chess-button {
     border: none;
-    padding: 12px 24px;
+    padding: 10px 22px;
     color: white;
     cursor: pointer;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s, color 0.3s;
 }
 .chess-button:hover {
@@ -741,7 +742,7 @@
     text-align: right;
 }
 .porto-div1 h1 {
-    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-weight: bold;
 }
 .porto-div1 img, .porto-div2 img {
@@ -756,14 +757,14 @@
     margin-top: 80px;
 }
 .porto-div2 h2 {
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.2rem);
     font-weight: bold;
 }
 .porto-div2 img {
     height: 300px;
 }
 .porto-description {
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
     margin-bottom: 20px;
 }
@@ -776,7 +777,7 @@
     padding: 30px;
     gap: 50px;
     text-align: center;
-    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 1.8vw, 2rem);
     font-weight: bold;
     border-radius: 15px 0 0 15px;
     background-color: #6b4c2a;
@@ -813,7 +814,8 @@
     gap: 0px;
     margin-left: 10%;
     width: 90vw;
-}}
+}
+}
 
 /* FAQ-Section ------------------------------------------------------------------------------------------------------------------------*/
 .faq-section {
@@ -830,11 +832,11 @@
     margin-top: 60px;
 }
 .faq-title{
-    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-weight: bold;
 }
 .faq-text{
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
 }
 .faq-container {
@@ -858,7 +860,7 @@
     cursor: pointer;
 }
 .faq-question h2 {
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.1rem, 1.7vw, 2rem);
     font-weight: normal;
 }
 .faq-arrow {
@@ -889,7 +891,7 @@
     opacity: 0;
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
     padding: 0 10px;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
     text-align: left;
 }
@@ -1030,7 +1032,7 @@
     transform: translateX(70%);
 }
 .chess-faq-text h2{
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.2rem);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -1038,7 +1040,7 @@
     width: 45%;
     max-width: 900px;
     padding: 4%;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
     transform: translateX(150%);
     opacity: 0;
@@ -1049,14 +1051,13 @@
 }
 .chess-faq-button {
     border: none;
-    padding: 12px 24px;
+    padding: 10px 22px;
     color: white;
     cursor: pointer;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background 0.3s, color 0.3s;
 }
 .chess-faq-button:hover {
@@ -1093,7 +1094,7 @@
     background-color: #f9f9f9;
 }
 .faq-chess-title{
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-weight: bold;
 }
 .faq-chess-container {
@@ -1114,7 +1115,7 @@
     cursor: pointer;
 }
 .faq-chess-question h2 {
-    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.1rem, 1.7vw, 2rem);
     font-weight: normal;
 }
 .faq-chess-arrow {
@@ -1142,7 +1143,7 @@
     opacity: 0;
     transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
     padding: 0 10px;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
     text-align: left;
 }
