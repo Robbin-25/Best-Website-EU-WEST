@@ -466,108 +466,97 @@
 
 /* Service ------------------------------------------------------------------------------------------------------------------------*/
 .scroll-space {
-            height: 100vh;
-        }
-
-        .services-section {
-            text-align: center;
-            padding: 100px 40px;
-            background-color: #f9f9f9;
-        }
-
-        .services-heading {
-            margin: 0 0 50px 0;
-            color: black;
-            font-weight: bold;
-            font-size: 35px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .services-heading::after {
-            content: '';
-            position: absolute;
-            width: 50%;
-            height: 3px;
-            bottom: -10px;
-            left: 25%;
-            background-color: #abb1b6;
-        }
-
-        .services-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-        }
-
-        .service-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 15px;
-            padding: 30px;
-            width: 350px;
-            max-width: 100%;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .service-card.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .service-icon {
-            background: gray;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 20px;
-            transition: background-color 0.3s ease;
-            line-height: 1;
-        }
-
-        .service-icon i {
-            display: block;
-            line-height: 1;
-            position: relative;
-            top: 0;
-        }
-
-        .service-title {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: #333;
-            font-weight: 800;
-            text-align: center;
-            min-height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .service-description {
-            text-align: center;
-            color: #666;
-            line-height: 1.6;
-            font-size: 16px;
-            max-width: 300px;
-            margin: 0 auto;
-        }
+    height: 100vh;
+}
+.services-section {
+    text-align: center;
+    padding: 100px 40px;
+    background-color: #f9f9f9;
+}
+.services-heading {
+    margin: 0 0 50px 0;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+}
+.services-heading::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: -10px;
+    left: 25%;
+    background-color: #abb1b6;
+}
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    max-width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.service-icon {
+    background: gray;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    line-height: 1;
+}
+.service-icon i {
+    display: block;
+    line-height: 1;
+    position: relative;
+    top: 0;
+}
+.service-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 800;
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-description {
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 300px;
+    margin: 0 auto;
+}
 
 /* Chess-Grid ------------------------------------------------------------------------------------------------------------------------*/
 .chess-section {
