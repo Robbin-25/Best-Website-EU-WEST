@@ -145,6 +145,7 @@
 }
 .nav-links a{
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.5s ease;
 }
 .nav-links.active a{
@@ -154,6 +155,7 @@
     opacity: 1;
     padding-top: 40px;
     padding-bottom: 40px;
+    pointer-events: auto;
 }
 .nav-hamburger {
     display: flex;
@@ -167,6 +169,31 @@
 }
 .nav-hamburger.active .nav-bar:nth-child(3) {
     transform: translateY(-11px) rotate(135deg);
+}
+
+/* Chess-Grid ------------------------------------------------------------------------------------------------------------------------*/
+.chess-grid {
+    display: grid;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+.chess-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+.chess-item:nth-child(1) { order: 1; }
+.chess-item:nth-child(2) { order: 2; }
+.chess-item:nth-child(3) { order: 4; }
+.chess-item:nth-child(4) { order: 3; }
+} 
+
+.chess-text {
+    padding: 20px;
+}
+
+.chess-image img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* Hero ------------------------------------------------------------------------------------------------------------------------*/
