@@ -861,7 +861,7 @@
 }
 .faq-question h2 {
     font-size: clamp(1.1rem, 1.7vw, 2rem);
-    font-weight: normal;
+    font-weight: 500;
 }
 .faq-arrow {
     width: 20px;
@@ -1116,7 +1116,7 @@
 }
 .faq-chess-question h2 {
     font-size: clamp(1.1rem, 1.7vw, 2rem);
-    font-weight: normal;
+    font-weight: 500;
 }
 .faq-chess-arrow {
     width: 20px;
