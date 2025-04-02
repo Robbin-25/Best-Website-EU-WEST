@@ -39,24 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Service -----------------------------------------------------------------------------------------------------
-const cards = document.querySelectorAll('.service-card');
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-};
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+ const cards = document.querySelectorAll('.service-card');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
 
-cards.forEach(card => {
-    observer.observe(card);
-});
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible'); // Repeats animation on scroll
+                }
+            });
+        }, observerOptions);
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
 
 // Chess -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
