@@ -81,19 +81,89 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Porto -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const portostatsSection = document.querySelector(".porto-stats");
-
-    const observer = new IntersectionObserver((entries) => {
+    // Animation für porto-stats Bereich
+    const portoStatsSection = document.querySelector(".porto-stats");
+    const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                portostatsSection.classList.add("porto-show-stats");
-            } else {
-                portostatsSection.classList.remove("porto-show-stats"); // Entfernt die Klasse, wenn sie nicht sichtbar ist
+                portoStatsSection.classList.add("porto-show-stats");
+                animateCounters();
+                    } else {
+                portoStatsSection.classList.remove("porto-show-stats");
+                resetCounters();
             }
         });
     }, { threshold: 0.3 });
+    
+    if (portoStatsSection) {
+        statsObserver.observe(portoStatsSection);
+    }
 
-    observer.observe(portostatsSection);
+    // Karten-Animation
+        const cardObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+            
+    const cards = document.querySelectorAll('.work-card-1, .work-card-2, .work-card-3');
+    cards.forEach(card => cardObserver.observe(card));
+
+    // Verbesserte Zählanimation
+    function animateCounters() {
+        const statElements = document.querySelectorAll('.porto-stats div > div');
+                
+        statElements.forEach(element => {
+            // Wenn bereits animiert, überspringen
+            if (element.dataset.animating === 'true') return;
+            element.dataset.animating = 'true';
+            
+            // Text parsen
+            const content = element.innerHTML;
+            const parts = content.split('<br>');
+            const numberText = parts[0].trim();
+            const label = parts[1] ? '<br>' + parts[1].trim() : '';
+            
+            // Zahlenwert und Prefix extrahieren
+            const hasPlus = numberText.includes('+');
+            const prefix = hasPlus ? '+' : '';
+            const targetNumber = parseInt(numberText.replace(/\D/g, ''));
+            
+            // Animationsparameter
+            const duration = Math.min(Math.max(targetNumber * 6, 800), 2000);
+            const startTime = performance.now();
+                    
+            // Animationsfunktion
+            function updateCounter(timestamp) {
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Easing-Funktion für weichere Animation
+                const easeOutQuad = progress * (2 - progress);
+                const currentValue = Math.floor(targetNumber * easeOutQuad);
+                
+                // DOM aktualisieren
+                element.innerHTML = `${prefix}${currentValue}${label}`;
+                
+                // Animation fortsetzen oder beenden
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+            
+            requestAnimationFrame(updateCounter);
+        });
+    }
+            
+    function resetCounters() {
+        const statElements = document.querySelectorAll('.porto-stats div > div');
+        statElements.forEach(element => {
+            element.dataset.animating = 'false';
+        });
+    }
 });
 
 // FAQ-Section -----------------------------------------------------------------------------------------------------
