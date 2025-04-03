@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 faqimage.classList.remove("faq-show");
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
     observer.observe(faqSection);
 });
 
