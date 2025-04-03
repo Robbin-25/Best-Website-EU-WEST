@@ -1664,6 +1664,7 @@
     color: #dad7cd;
     font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-weight: normal;
+    text-decoration: none;
 }
 .footer-text span{
     font-size: clamp(1rem, 1.2vw, 1.5rem);
