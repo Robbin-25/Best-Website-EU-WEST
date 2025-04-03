@@ -298,6 +298,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+// Testimonial-----------------------------------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+      const underline = document.getElementById('testimonial-underline');
+      const testimonialSection = document.getElementById('testimonial-section');
+      const testimonialCards = document.querySelectorAll('.testimonial-card');
+      
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+   
+          if (entry.isIntersecting) {
+
+            underline.classList.add('animate');
+            
+
+            testimonialCards.forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.add('animate');
+              }, 300 + (index * 200)); 
+            });
+          } else {
+
+            underline.classList.remove('animate');
+            
+            testimonialCards.forEach(card => {
+              card.classList.remove('animate');
+            });
+          }
+        });
+      }, { threshold: 0.3 }); 
+      
+
+      observer.observe(testimonialSection);
+    });
+
 // Num-----------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
     // Observer für Animation der Karten
