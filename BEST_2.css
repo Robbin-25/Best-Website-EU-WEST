@@ -757,7 +757,7 @@
     height: 500px;
 }
 .porto-div2 {
-    margin-top: 80px;
+    margin-top: clamp(50px, 4vw, 80px);
 }
 .porto-div2 h2 {
     font-size: clamp(1.2rem, 1.8vw, 2.2rem);
@@ -813,7 +813,7 @@
     width: 100%;
 }
 .porto-stats {
-    bottom: 350px;
+    bottom: 390px;
     gap: 0px;
     margin-left: 10%;
     width: 90vw;
