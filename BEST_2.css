@@ -39,9 +39,10 @@
     align-items: center;
     background: #705D46;
     color: #283618;
-    padding: 6px 7px;
+    padding: 4px 5px;
+    padding-left: 7px;
     margin: 30px 10%;
-    border-radius: 25px;
+    border-radius: 16px;
     z-index: 1000;
     max-height: 60px;
     transition: background-color 0.5s ease-in-out;
@@ -63,7 +64,7 @@
     margin-left: 3vw;
 }
 .nav-button{
-    border-radius: 20px;
+    border-radius: 12px;
     background: linear-gradient(to right, #705D46, #ddba8d);
     box-shadow: 0 1px 5px #705D46;
     transition: background-color 0.5s ease-in-out;
@@ -135,15 +136,14 @@
     top: 22px;
     left: 0;
     background: #705D46;
-    border-bottom-right-radius: 35px;
-    border-bottom-left-radius: 35px;
+    border-radius: 0 0 16px 16px;
     padding: 0;
     z-index: 500;
     gap: 5px;
     transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
 }
 .nav-links li{
-    padding: 0 7px;
+    padding: 0 15px;
 }
 .nav-links a{
     opacity: 0;
@@ -156,8 +156,7 @@
     height: auto; /* Erlaubt, dass der Inhalt sich entfaltet */
     opacity: 1;
     visibility: visible;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 25px 0;
 }
 .nav-hamburger {
     display: flex;
@@ -171,31 +170,6 @@
 }
 .nav-hamburger.active .nav-bar:nth-child(3) {
     transform: translateY(-11px) rotate(135deg);
-}
-
-/* Chess-Grid ------------------------------------------------------------------------------------------------------------------------*/
-.chess-grid {
-    display: grid;
-    gap: 10px;
-}
-
-@media (min-width: 768px) {
-.chess-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-.chess-item:nth-child(1) { order: 1; }
-.chess-item:nth-child(2) { order: 2; }
-.chess-item:nth-child(3) { order: 4; }
-.chess-item:nth-child(4) { order: 3; }
-} 
-
-.chess-text {
-    padding: 20px;
-}
-
-.chess-image img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 /* Hero ------------------------------------------------------------------------------------------------------------------------*/
@@ -665,14 +639,14 @@
     height: 400px;
     overflow: hidden;
     box-shadow: 0 3px 10px grey;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 16px 16px 0;
     transform: translateX(-70%);
     opacity: 0;
     object-fit: cover;
     transition: transform 0.6s ease-in, opacity 0.6s ease-in;
 }
 .chess-right img {
-    border-radius: 20px 0 0 20px;
+    border-radius: 16px 0 0 16px;
     transform: translateX(70%);
 }
 .chess-text h2{
@@ -701,7 +675,7 @@
     font-size: clamp(1rem, 1.2vw, 1.3rem);
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: background 0.3s, color 0.3s;
 }
 .chess-button:hover {
@@ -775,7 +749,7 @@
     font-weight: bold;
 }
 .porto-div1 img, .porto-div2 img {
-    border-radius: 15px;
+    border-radius: 16px;
     box-shadow: 0 3px 10px #a07240;
     object-fit: cover;
 }
@@ -808,7 +782,7 @@
     text-align: center;
     font-size: clamp(1rem, 1.8vw, 2rem);
     font-weight: bold;
-    border-radius: 15px 0 0 15px;
+    border-radius: 16px 0 0 16px;
     background-color: #6b4c2a;
     box-shadow: 0 3px 10px #a07240;
     opacity: 0;
@@ -875,7 +849,7 @@
     margin-top: 50px;
     background: white;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 16px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .faq-item {
@@ -905,6 +879,7 @@
     position: absolute;
     width: 15px;
     height: 3px;
+    border-radius: 1px;
     background-color: black;
     transition: transform 0.3s ease;
 }
@@ -939,7 +914,7 @@
     max-width: 450px;
     width: 50%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 16px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -969,7 +944,7 @@
 
 /* Cta Section ------------------------------------------------------------------------------------------------------------------------*/
  .cta-section {
-            padding: 0px 0px;
+   padding: 0px 0px;
             display: flex;
             justify-content: center;
             position: relative;
@@ -1067,6 +1042,7 @@
                 font-size: 0.9rem;
             }
         }
+
 /* Chess-FAQ-Grid ------------------------------------------------------------------------------------------------------------------------*/
 .chess-faq-section {
     width: 100%;
@@ -1086,14 +1062,14 @@
     height: 500px;
     overflow: hidden;
     box-shadow: 0 3px 10px grey;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 16px 16px 0;
     transform: translateX(-70%);
     opacity: 0;
     object-fit: cover;
     transition: transform 0.6s ease-in, opacity 0.6s ease-in;
 }
 .chess-faq-right img {
-    border-radius: 20px 0 0 20px;
+    border-radius: 16px 0 0 16px;
     transform: translateX(70%);
 }
 .chess-faq-text h2{
@@ -1122,7 +1098,7 @@
     font-size: clamp(1rem, 1.2vw, 1.3rem);
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: background 0.3s, color 0.3s;
 }
 .chess-faq-button:hover {
@@ -1196,6 +1172,7 @@
     position: absolute;
     width: 20px;
     height: 3px;
+    border-radius: 1px;
     background-color: black;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
