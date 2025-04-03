@@ -635,7 +635,8 @@
 }
 .chess-content img {
     width: 48%;
-    height: 400px;
+    max-height: 400px;
+    height: 50vw ;
     overflow: hidden;
     box-shadow: 0 3px 10px grey;
     border-radius: 0 16px 16px 0;
@@ -1058,7 +1059,8 @@
 }
 .chess-faq-content img {
     width: 48%;
-    height: 500px;
+    max-height: 500px;
+    height: 50vw ;
     overflow: hidden;
     box-shadow: 0 3px 10px grey;
     border-radius: 0 16px 16px 0;
