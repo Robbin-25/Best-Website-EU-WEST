@@ -1437,6 +1437,20 @@
     color: #a8a8a8;
 }
 
+ @media only screen and (max-width: 400px) {
+      .underline::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #2563eb;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+        }
+
 /* Numbers------------------------------------------------------------------------------------------------------------------------*/
 .section-numbers {
     display: flex;
