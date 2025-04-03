@@ -1,1 +1,11 @@
-
+1. Navbar Dicker
+2. Gradient weniger 
+3. Button animationen 
+4. Hintergund Farben ändern 
+5. Faq section Komplexerere Bilder 
+-> vlt mehr text unter title 
+6. Faq title ändern 
+7. Etwas simpler moderner
+8. weniger Farben 
+9. Nicht so starke animationen 
+10. Bilder richtig alignen
