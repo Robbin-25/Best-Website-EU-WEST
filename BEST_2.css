@@ -63,6 +63,10 @@
 .nav-links li {
     margin-left: 3vw;
 }
+.nav-button2{
+    display: none;
+}
+}
 .nav-button{
     border-radius: 12px;
     background: linear-gradient(to right, #705D46, #ddba8d);
@@ -71,7 +75,6 @@
 }
 .nav-button li{
     margin: 0 12px;
-}
 }
 .overlay.active {
     display: block;
@@ -141,6 +144,11 @@
     z-index: 500;
     gap: 5px;
     transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+.nav-button2{
+    display: flex;
+    width: 105px;
+    margin: 15px 0 0 10px;
 }
 .nav-links li{
     padding: 0 15px;
