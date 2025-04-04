@@ -440,7 +440,6 @@
 .about-divider {
     position: relative;
     padding-left: 15px;
-    margin-bottom: 25px;
 }        
 .about-divider:before {
     content: "";
