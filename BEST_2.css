@@ -438,9 +438,10 @@
     font-weight: bold;
 }      
 .about-divider {
-    position: relative;
-    padding-left: 15px;
-}        
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }     
 .about-divider:before {
     content: "";
     position: absolute;
