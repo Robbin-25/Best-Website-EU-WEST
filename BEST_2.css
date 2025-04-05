@@ -38,10 +38,10 @@
     width: 86%;
     justify-content: space-between;
     align-items: center;
-    background: #705D46;
+    background: #87986a;
     color: #283618;
     padding: 5px;
-    margin: 30px 7%;
+    margin: clamp(20px, 1.5vw, 30px) 7%;
     border-radius: 16px;
     z-index: 1000;
     max-height: 60px;
@@ -52,10 +52,10 @@
     background-color: transparent;
 }
 .navbar.scrolled {
-    background-color: #705D46
+    background-color: #87986a
 }
 .navbar.scrolled .nav-button a{
-    color: #705D46
+    color: #87986a
 }
 .navbar.scrolled .nav-button{
     background: white;
@@ -69,8 +69,8 @@
 }
 .nav-button{
     border-radius: 12px;
-    background: linear-gradient(to right, #8d775b, #ddba8d);
-    box-shadow: 0 1px 5px #705D46;
+    background: #87986a;
+    box-shadow: 0 1px 5px #87986a;
     transition: background-color 0.5s ease-in-out;
 }
 .nav-button li{
@@ -100,7 +100,7 @@
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: clamp(1rem, 1.2vw, 1.7rem);
+    font-size: clamp(1rem, 1.6vw, 1.7rem);
     transition: color 0.5s ease-in-out;
     display: flex;
     flex-direction: row;
@@ -138,7 +138,7 @@
     position: absolute;
     top: 22.5px;
     left: 0;
-    background: #705D46;
+    background: #87986a;
     border-radius: 0 0 16px 16px;
     padding: 0;
     z-index: 500;
@@ -149,6 +149,10 @@
     display: flex;
     margin: 12px 0 0 12px;
     width: min-content;
+    background: white ;
+}
+.nav-button a{
+    color: #87986a;
 }
 .nav-links li{
     padding: 0 15px;
@@ -702,7 +706,7 @@
 .chess-button {
     border: none;
     padding: 8px 18px;
-    color: white;
+    color: #f6fbec;
     cursor: pointer;
     font-size: clamp(0.8rem, 0.9vw, 1rem);
     font-weight: bold;
@@ -711,11 +715,11 @@
     transition: background 0.3s, color 0.3s;
 }
 .chess-button:hover {
-    background: black;
+    background: #f6edd9;
     color: white;
 }
 .chess-button-gradient {
-    background: linear-gradient(to right, #705D46, #ddba8d);
+    background: #719e2f;
 }
 .chess-right .chess-text {
     transform: translateX(-150%);
@@ -753,8 +757,9 @@
 
 /* Porto-Section -----------------------------------------------------------------------------------*/
 .porto-section {
-    background: linear-gradient(to right, #c0a07f, #a07240);
+    background: #f6edd9;
     overflow: hidden;
+    color: #3e4237;
 }
 .porto-container {
     display: flex;
@@ -763,7 +768,7 @@
     margin: auto;
     padding-top: 100px;
     padding-bottom: 270px;
-    color: white;
+    color: 79553C;
     gap: 20px;
     position: relative; /* Macht die Stats relativ dazu */
 }
@@ -782,7 +787,7 @@
 }
 .porto-div1 img, .porto-div2 img {
     border-radius: 16px;
-    box-shadow: 0 3px 10px #a07240;
+    box-shadow: 0 3px 10px #79553C;
     object-fit: cover;
 }
 .porto-div1 img {
@@ -815,8 +820,9 @@
     font-size: clamp(0.9rem, 1.7vw, 1.9rem);
     font-weight: bold;
     border-radius: 16px 0 0 16px;
-    background-color: #6b4c2a;
-    box-shadow: 0 3px 10px #a07240;
+    background-color: #87986a;
+    box-shadow: 0 3px 10px #87986a;
+    color: #f6fbec;
     opacity: 0;
     transform: translateX(50%);
     transition: opacity 1s ease-out, transform 1s ease-out;
@@ -854,14 +860,15 @@
 
 /* FAQ-Section ------------------------------------------------------------------------------------------------------------------------*/
 .faq-section {
+    background: #f6edd9;
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     padding: 100px 0;
     gap: 50px;
-    width: 90%;  
-    margin: auto;  
+    width: 100%;  
+    padding: 100px 10%;  
 }
 .faq-left{
     margin-top: 60px;
@@ -1129,7 +1136,7 @@
 .chess-faq-button {
     border: none;
     padding: 8px 18px;
-    color: white;
+    color: #f6fbec;
     cursor: pointer;
     font-size: clamp(0.8rem, 0.9vw, 1rem);
     font-weight: bold;
@@ -1138,11 +1145,11 @@
     transition: background 0.3s, color 0.3s;
 }
 .chess-faq-button:hover {
-    background: black;
+    background: #f6edd9;
     color: white;
 }
 .chess-faq-button-gradient {
-    background: linear-gradient(to right, #705D46, #ddba8d);
+    background: #719e2f;
 }
 .chess-faq-right .chess-faq-text {
     transform: translateX(-150%);
@@ -1167,12 +1174,13 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: #f9f9f9;
 }
 .faq-chess-title{
     font-size: clamp(1.4rem, 1.9vw, 2.4rem);
     font-weight: bold;
+    color: #719e2f;
 }
 .faq-chess-container {
     text-align: left;
@@ -1272,7 +1280,7 @@
 
 .infinity-grid-section{
     overflow: hidden;
-    background-color: #f9f9f9;
+    background-color: #f6fbec;
 }
 .infinity-grid-grid{
     display: grid;
@@ -1321,6 +1329,31 @@
 @keyframes infinity-grid-marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); } /* Nur bis zur Hälfte, da der Inhalt doppelt ist */
+}
+/* Viwer-Section ------------------------------------------------------------------------------------------------------------------------*/
+.image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.viewer-content {
+    max-width: 80%;
+    max-height: 80%;
+}
+.viewer-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 /* Viwer-Section ------------------------------------------------------------------------------------------------------------------------*/
@@ -1688,7 +1721,7 @@
 
 /* FOOTER-SECTION------------------------------------------------------------------------------------------------------------------------*/
 .footer-section{
-    background-color: #6b4c2a;
+    background-color: #87986a;
     bottom: 0;
     padding: 0.5vw;
 }
@@ -1698,7 +1731,7 @@
     padding: auto;
 }
 .footer-col{
-    color: #c0a07f;
+    color: #dde7cb;
     margin: 20px auto;
     text-align: center;
     width: 220px;
@@ -1719,7 +1752,7 @@
     font-weight: normal;
 }
 .footer-line{
-    background: linear-gradient(to right, #c0a07f, #a07240);
+    background: linear-gradient(to right, #98aa79, #9fca54);
     height: 3px;
 }
 .footer-rights{
