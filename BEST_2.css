@@ -509,13 +509,8 @@
             transition: background 0.3s, color 0.3s;
         }
         
-        .about-button:hover {
-            background: black;
-            color: white;
-        }
-        
         .about-button-gradient {
-            background: linear-gradient(to right, #705D46, #ddba8d);
+            background: #383838;
         }
         
         /* Responsive Styles */
