@@ -5,60 +5,61 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-size: clamp(1.4rem, 1.9vw, 2.4rem);
   font-weight: bold;
 }
 
 h2 {
-  font-size: clamp(1.2rem, 1.8vw, 2.2rem);
+  font-size: clamp(1.1rem, 1.7vw, 2.1rem);
   font-weight: bold;
 }
 
 h3 {
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-size: clamp(0.9rem, 1.4vw, 1.7rem);
   font-weight: normal;
 }
 
 p {
-  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.4rem);
   font-weight: normal;
 }
 
 .small-text {
-  font-size: clamp(0.8rem, 0.9vw, 1rem);
+  font-size: clamp(0.7rem, 0.8vw, 0.9rem);
   font-weight: lighter;
 }
 
 .number-highlight {
-  font-size: clamp(1rem, 1.8vw, 2rem);
+  font-size: clamp(0.9rem, 1.7vw, 1.9rem);
   font-weight: bold;
 }
 
 .blockquote {
-  font-size: clamp(1rem, 1.3vw, 1.7rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.6rem);
   font-style: italic;
   font-weight: normal;
 }
 
 .caption {
-  font-size: clamp(0.8rem, 0.9vw, 1rem);
+  font-size: clamp(0.7rem, 0.8vw, 0.9rem);
   font-weight: normal;
   font-style: italic;
 }
 
 .lead-text {
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: clamp(1.1rem, 1.9vw, 1.9rem);
   font-weight: bold;
 }
 
 .btn-text {
-  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .highlighted {
-  font-size: clamp(1rem, 1.5vw, 1.8rem);
+  font-size: clamp(0.9rem, 1.4vw, 1.7rem);
   font-weight: bolder;
 }
+
