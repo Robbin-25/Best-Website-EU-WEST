@@ -294,7 +294,7 @@
     animation: bounce 2s infinite 1.8s;
     opacity: 0;
     animation-fill-mode: forwards;
-    z-index: 10000;
+    z-index: 100;
 }
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
