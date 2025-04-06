@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+<section class="contact-section">
+        <div class="contact-container">
+            <div class="form-wrapper">
+                <form action="email kommt hier rein" method="POST" class="contact-form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://deineseite.de/danke.html">
+                    
+                    <div class="form-group name-group">
+                        <label for="name-field" class="form-label name-label">Name</label>
+                        <input id="name-field" type="text" name="name" class="form-input name-input" required>
+                    </div>
+                    <div class="form-group email-group">
+                        <label for="email-field" class="form-label email-label">Email</label>
+                        <input id="email-field" type="email" name="email" class="form-input email-input" required>
+                    </div>
+                    <div class="form-group message-group">
+                        <label for="message-field" class="form-label message-label">Message</label>
+                        <textarea id="message-field" name="message" class="form-textarea message-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+  <script src="contact.js"></script>
+    </body>
+</html>
