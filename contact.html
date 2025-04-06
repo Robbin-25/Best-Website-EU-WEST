@@ -3,10 +3,30 @@
 <head>
     <link rel="stylesheet" href="contact.css">
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
 </head>
 <body>
+    <nav class="navbar">
+        <img class="nav-logo" src="1.jpg" alt="">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Über</a></li>
+            <li><a href="#">Dienste</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li class="nav-button2 nav-button"><a href="#">About</a></li>
+        </ul>
+        <ul class="nav-button nav-links ">
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav-hamburger" onclick="toggleMenu()">
+            <div class="nav-bar"></div>
+            <div class="nav-bar"></div>
+            <div class="nav-bar"></div>
+        </div>
+    </nav>
+    <div class="overlay-nav" id="overlay-nav"></div>
 <section class="contact-section">
         <div class="contact-container">
             <div class="form-wrapper">
