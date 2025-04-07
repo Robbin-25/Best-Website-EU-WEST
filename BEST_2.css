@@ -1523,7 +1523,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #705D46, #ddba8d);
+    background: #BCBD8B;
     padding: 50px 30px;
 }
 .wrapper-numbers {
