@@ -1,4 +1,5 @@
-  const animatedFormFields = document.querySelectorAll('.form-input, .form-textarea');
+// Form -----------------------------------------------------------------------------------------------------
+const animatedFormFields = document.querySelectorAll('.form-input, .form-textarea');
         
         const scrollObserverOptions = {
             root: null,
@@ -25,7 +26,7 @@
             this.style.height = 'auto';
             this.style.height = (this.scrollHeight) + 'px';
         });
-
+// Navbar -----------------------------------------------------------------------------------------------------
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
     document.querySelector(".nav-hamburger").classList.toggle("active");
