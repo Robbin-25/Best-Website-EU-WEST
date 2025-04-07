@@ -757,9 +757,9 @@
 
 /* Porto-Section -----------------------------------------------------------------------------------*/
 .porto-section {
-    background: #f6edd9;
+    background: #BCBD8B;
     overflow: hidden;
-    color: #3e4237;
+    color: white;
 }
 .porto-container {
     display: flex;
@@ -820,7 +820,7 @@
     font-size: clamp(0.9rem, 1.7vw, 1.9rem);
     font-weight: bold;
     border-radius: 16px 0 0 16px;
-    background-color: #87986a;
+    background-color: #4B532A;
     box-shadow: 0 3px 10px #87986a;
     color: #f6fbec;
     opacity: 0;
