@@ -860,7 +860,7 @@
 
 /* FAQ-Section ------------------------------------------------------------------------------------------------------------------------*/
 .faq-section {
-    background: #f6edd9;
+    background: white;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -1280,7 +1280,7 @@
 
 .infinity-grid-section{
     overflow: hidden;
-    background-color: #f6fbec;
+    background-color: white;
 }
 .infinity-grid-grid{
     display: grid;
