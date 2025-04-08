@@ -5,6 +5,7 @@ padding: 0;
 box-sizing: border-box;
 font-family: Arial, sans-serif;
         }
+/* navbar -----------------------------------------------------------------------------------*/
    .navbar {
 display: flex;
 position: fixed;
@@ -153,6 +154,8 @@ transition: background-color 0.5s ease-in-out;
 .nav-hamburger.active .nav-bar:nth-child(3) {
     transform: translateY(-11px) rotate(135deg);
 }
+
+/* Contact -----------------------------------------------------------------------------------*/
         .contact-section {
             padding: 100px 30px;
             display: flex;
@@ -241,7 +244,7 @@ transition: background-color 0.5s ease-in-out;
         
         @media screen and (max-width: 768px) {
             .contact-section {
-                padding: 50px 20px;
+                padding: 100px 20px;
                 min-height: auto;
             }
             
@@ -267,7 +270,7 @@ transition: background-color 0.5s ease-in-out;
         
         @media screen and (max-width: 480px) {
             .contact-section {
-                padding: 40px 15px;
+                padding: 100px 15px;
             }
             
             .contact-container {
@@ -293,5 +296,7 @@ transition: background-color 0.5s ease-in-out;
                 min-height: 100px;
             }
         }
+
+/* Footer -----------------------------------------------------------------------------------*/
 
 
