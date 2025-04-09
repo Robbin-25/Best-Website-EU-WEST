@@ -1,3 +1,8 @@
+// loader-Section -----------------------------------------------------------------------------------------------------
+window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
+});
+
 // Form -----------------------------------------------------------------------------------------------------
 const animatedFormFields = document.querySelectorAll('.form-input, .form-textarea');
         
