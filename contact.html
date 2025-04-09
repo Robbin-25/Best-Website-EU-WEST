@@ -8,7 +8,8 @@
     <title>Contact Form</title>
 </head>
 <body>
-    <!-- Navbar ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
+
+<!-- Navbar ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
     <nav class="navbar">
         <img class="nav-logo" src="1.jpg" alt="">
         <ul class="nav-links">
@@ -28,11 +29,12 @@
         </div>
     </nav>
     <div class="overlay-nav" id="overlay-nav"></div>
-    <!-- Contact Formular ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
+
+<!-- Contact Formular ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
 <section class="contact-section">
-        <div class="contact-container">
-            <div class="form-wrapper">
-               <form action="https://formsubmit.co/17fabd34cabe99a5ac632df0217e529d" method="POST">
+    <div class="contact-container">
+    <div class="form-wrapper">
+    <form action="https://formsubmit.co/17fabd34cabe99a5ac632df0217e529d" method="POST">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://deineseite.de/danke.html">
     
@@ -51,11 +53,55 @@
         <textarea id="message" name="message" class="form-textarea" required></textarea>
     </div>
     <button type="submit" class="submit-button">Submit</button>
-</form>
+    </form>
+    </div>
+    </div>
+</section>
+
+<!-- Footer ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
+    <footer class="footer-contact-section">
+        <div class="footer-contact-line"></div>
+        <div class="footer-contact-container">
+            <div class="footer-contact-col">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <h2>Visit Us</h2>
+                <p class="footer-contact-text">Wir freuen uns auf deinen Besuch</p>
+                <p class="footer-contact-green">Europa, London, Uk</p>
+            </div>
+            <div class="footer-contact-col">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <h2>Call Us</h2>
+                <p class="footer-contact-text">Wir freuen uns auf deinen Anruf!</p>
+                <p class="footer-contact-green">+49 123 456789</p>
+            </div>
+            <div class="footer-contact-col">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <h2>Message Us</h2>
+                <p class="footer-contact-text">Schreib uns jederzeit!</p>
+                <p class="footer-contact-green"><a href="mailto:info@beispiel.de">info@beispiel.de</a></p>
             </div>
         </div>
-    </section>
-    <!-- Footer ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->   
-  <script src="contact.js"></script>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.5049936044293!2d13.404954315968896!3d52.52000617981116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c4a94e497f%3A0x4218f1dbfe0b94b7!2sBerlin!5e0!3m2!1sde!2sde!4v1646824650657!5m2!1sde!2sde"
+            allowfullscreen=""
+            loading="lazy"
+            class="footer-contact-iframe"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="footer-contact-box">
+            <h2>Follow Us</h2>
+            <div class="footer-contact-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact-line"></div>
+        <div class="footer-contact-rights">
+            <p>ALL Rights Have been Reserved / <span id="year"></span></p>
+        </div>
+    </footer> 
+  
+    <script src="contact.js"></script>
     </body>
 </html>
