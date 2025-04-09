@@ -55,3 +55,6 @@ window.addEventListener("scroll", function () {
       navbar.classList.remove("scrolled");
     }
 });
+
+// Year -----------------------------------------------------------------------------------------------------
+  document.getElementById("year").textContent = new Date().getFullYear();
