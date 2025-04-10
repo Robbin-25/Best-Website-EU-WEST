@@ -31,14 +31,13 @@ font-family: Arial, sans-serif;
 }
 
 /* Navbar ---------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.navbar {
+.navbar-contact {
     display: flex;
     position: fixed;
     width: 86%;
     justify-content: space-between;
     align-items: center;
     background: #87986a;
-    color: #283618;
     padding: 5px;
     margin: clamp(20px, 1.5vw, 30px) 7%;
     border-radius: 16px;
@@ -46,39 +45,10 @@ font-family: Arial, sans-serif;
     max-height: 60px;
     transition: background-color 0.5s ease-in-out;
 }
-@media (min-width: 769px) {
-.navbar {
-    background-color: transparent;
-}
-.navbar.scrolled {
-    background-color: #87986a
-}
-.navbar.scrolled .nav-button a{
-    color: #87986a
-}
-.navbar.scrolled .nav-button{
-    background: white;
-}
-.nav-links li {
-    margin-left: 3vw;
-}
-.nav-button2{
-    display: none;
-}
-}
-.nav-button{
-    border-radius: 12px;
-    background: #87986a;
-    box-shadow: 0 1px 5px #87986a;
-    transition: background-color 0.5s ease-in-out;
-}
-.nav-button li{
-    margin: 0 12px;
-}
-.overlay.active {
+.overlay-contact.active {
     display: block;
 }
-.overlay-nav {
+.overlay-contact-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -88,15 +58,15 @@ font-family: Arial, sans-serif;
     display: none;
     z-index: 999;
 }
-.nav-logo{
+.nav-contact-logo{
     z-index: 1000;
     height: 25px;
 }
-.nav-links {
+.nav-contact-links {
     list-style: none;
     display: flex;
 }
-.nav-links a {
+.nav-contact-links a {
     text-decoration: none;
     color: white;
     font-size: clamp(1rem, 1.6vw, 1.7rem);
@@ -105,7 +75,27 @@ font-family: Arial, sans-serif;
     flex-direction: row;
     align-items: center;
 }
-.nav-hamburger {
+@media (min-width: 769px) {
+.nav-contact-links li {
+    margin-left: 3vw;
+}
+.nav-contact-button2{
+    display: none;
+}
+}
+.nav-contact-button{
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 1px 5px white;
+    transition: background-color 0.5s ease-in-out;
+}
+.nav-contact-button a{
+    color: #87986a;
+}
+.nav-contact-button li{
+    margin: 0 12px;
+}
+.nav-contact-hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -115,7 +105,7 @@ font-family: Arial, sans-serif;
     transition: 0.3s;
     z-index: 1000;
 }
-.nav-bar {
+.nav-contact-bar {
     width: 32px;
     height: 3px;
     background: white;
@@ -124,10 +114,10 @@ font-family: Arial, sans-serif;
     border-radius: 1px;
 }
 @media (max-width: 768px) {
-.navbar{
+.navbar-contact{
     padding: 10px;
 }
-.nav-links {
+.nav-contact-links {
     height: 0;
     overflow: hidden;
     opacity: 0;
@@ -144,46 +134,45 @@ font-family: Arial, sans-serif;
     gap: 5px;
     transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
 }
-.nav-button2{
+.nav-contact-button2{
     display: flex;
     margin: 12px 0 0 12px;
     width: min-content;
-    background: white ;
+    background: white;
 }
-.nav-button a{
+.nav-contact-button a{
     color: #87986a;
 }
-.nav-links li{
+.nav-contact-links li{
     padding: 0 15px;
 }
-.nav-links a{
+.nav-contact-links a{
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-.nav-links.active a{
+.nav-contact-links.active a{
     opacity: 1;
 }
-.nav-links.active {
+.nav-contact-links.active {
     height: auto; /* Erlaubt, dass der Inhalt sich entfaltet */
     opacity: 1;
     visibility: visible;
     padding: 35px 0 20px 0;
 }
-.nav-hamburger {
+.nav-contact-hamburger {
     display: flex;
 }
 }
-.nav-hamburger.active .nav-bar:nth-child(1) {
+.nav-contact-hamburger.active .nav-contact-bar:nth-child(1) {
     transform: translateY(11px) rotate(-135deg);
 }
-.nav-hamburger.active .nav-bar:nth-child(2) {
+.nav-contact-hamburger.active .nav-contact-bar:nth-child(2) {
     opacity: 0;
 }
-.nav-hamburger.active .nav-bar:nth-child(3) {
+.nav-contact-hamburger.active .nav-contact-bar:nth-child(3) {
     transform: translateY(-11px) rotate(135deg);
 }
 /* Navbar ---------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /* Contact -----------------------------------------------------------------------------------*/
         .contact-section {
