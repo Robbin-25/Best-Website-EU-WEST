@@ -31,7 +31,8 @@ const animatedFormFields = document.querySelectorAll('.form-input, .form-textare
             this.style.height = 'auto';
             this.style.height = (this.scrollHeight) + 'px';
         });
-// Navbar -----------------------------------------------------------------------------------------------------
+
+// Navbar ---------------------------------------------------------------------------------------------------------------------------------------------------------
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
     document.querySelector(".nav-hamburger").classList.toggle("active");
@@ -60,6 +61,8 @@ window.addEventListener("scroll", function () {
       navbar.classList.remove("scrolled");
     }
 });
+// Navbar ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Year -----------------------------------------------------------------------------------------------------
   document.getElementById("year").textContent = new Date().getFullYear();
