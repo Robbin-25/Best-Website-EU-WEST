@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// FAQ-Section -----------------------------------------------------------------------------------------------------
+// FAQ-Section ---------------------------------------------------------------------------------------------------------------------------------------------------------
 function toggleFAQ(element) {
     let faqItem = element.parentElement;
     faqItem.classList.toggle("faq-active");
@@ -175,17 +175,25 @@ function toggleFAQ(element) {
 document.addEventListener("DOMContentLoaded", function () {
     const faqimage = document.querySelector(".faq-img");
     const faqSection = document.querySelector(".faq-section");
+    const cornerImages = document.querySelectorAll(".faq-corner-img");
+
+    // Observer für das Hauptbild im FAQ-Bereich
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 faqimage.classList.add("faq-show");
+                cornerImages.forEach(image => image.classList.add("faq-show"));
             } else {
                 faqimage.classList.remove("faq-show");
+                cornerImages.forEach(image => image.classList.remove("faq-show"));
             }
         });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.5});
+
     observer.observe(faqSection);
 });
+
+// FAQ-Section ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Chess-FAQ-Section -----------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
